@@ -13,3 +13,5 @@ function PlayerAnimateSprite(){
 		localFrame -= _totalFrames; // resets back to first frame
 	} else animationEnd = false;
 }
+
+

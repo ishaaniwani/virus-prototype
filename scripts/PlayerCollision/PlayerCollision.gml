@@ -10,7 +10,7 @@ function PlayerCollision(){
 	}
 	
 	// Horizontal Collision Check with wall
-	if (place_meeting(x + speedWalk, y, objWall) or place_meeting(x - speedWalk, y, objWall)) {
+	if ((place_meeting(x + speedWalk, y, objWall) and sign(hSpeed) > 0) or (place_meeting(x - speedWalk, y, objWall)) and sign(hSpeed) < 0) {
 		hSpeed = 0;
 		_collision = true;
 	}

@@ -3,41 +3,17 @@
 function PlayerCollision(){
 	var _collision = false;
 	
-	// Vertical collision check with wall
-	if ((place_meeting(x, y + speedWalk, objWall) and sign(vSpeed) > 0) or (place_meeting(x, y - speedWalk, objWall) and sign(vSpeed) < 0)) {
-		vSpeed = 0;
-		_collision = true;
-	}
-	
 	// Horizontal Collision Check with wall
-	if ((place_meeting(x + speedWalk, y, objWall) and sign(hSpeed) > 0) or (place_meeting(x - speedWalk, y, objWall)) and sign(hSpeed) < 0) {
+	if ((place_meeting(x + speedWalk, y, objWall) and hSpeed > 0) or (place_meeting(x - speedWalk, y, objWall)) and hSpeed < 0) {
 		hSpeed = 0;
 		_collision = true;
 	}
 	
-	/** Old code with tilesets
-	// Horizontal Tiles
-	if (tilemap_get_at_pixel(collisionMap, x + hSpeed, y)) {
-		// how many movements left before hitting?
-		x -= x mod TILE_SIZE; 
-		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
-		// if gonna hit, stop the player
-		hSpeed = 0;
-		_collision = true;
-	}
-	
-	
-	
-	// Vertical Tiles
-	if (tilemap_get_at_pixel(collisionMap, x, y + vSpeed)) {
-		// how many movements left before hitting?
-		y -= y mod TILE_SIZE; 
-		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;
-		// if gonna hit, stop the player
+	// Vertical collision check with wall
+	if ((place_meeting(x, y + 1, objWall) and vSpeed > 0) or (place_meeting(x, y - 1, objWall) and vSpeed < 0)) {
 		vSpeed = 0;
 		_collision = true;
 	}
-	**/
 	
 	// Vertical Move Commit
 	y += vSpeed;

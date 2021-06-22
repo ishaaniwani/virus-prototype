@@ -10,7 +10,7 @@ function PlayerCollision(){
 	}
 	
 	// Vertical collision check with wall
-	if ((place_meeting(x, y + 1, objWall) and vSpeed > 0) or (place_meeting(x, y - 1, objWall) and vSpeed < 0)) {
+	if ((place_meeting(x, y + speedWalk, objWall) and vSpeed > 0) or (place_meeting(x, y - speedWalk, objWall) and vSpeed < 0)) {
 		vSpeed = 0;
 		_collision = true;
 	}

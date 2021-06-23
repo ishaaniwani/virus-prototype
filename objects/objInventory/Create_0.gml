@@ -8,7 +8,6 @@ gui_height = display_get_gui_height();
 cell_size = 11;
 inv_slots = 7; // total number of inventory slots
 
-
 inv_UI_width = 240;
 inv_UI_height = 180;
 
@@ -19,18 +18,23 @@ cell_size = 11;
 inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale);
 inv_UI_y = (gui_height * 0.5) - (inv_UI_height * 0.5 * scale);
 
-info_x = inv_UI_x + (7 * scale);
+info_x = inv_UI_x + (6 * scale);
 info_y = inv_UI_y + (9 * scale);
 
-hp_x = inv_UI_x + (7 * scale);
-hp_y = inv_UI_y + (20 * scale);
+hp_x = info_x;
+hp_y = inv_UI_y + (23 * scale);
 
-gold_x = inv_UI_x + (7 * scale);
-gold_y = inv_UI_y + (29 * scale);
+gold_x = info_x;
+gold_y = inv_UI_y + (32 * scale);
 
-inventory_x = inv_UI_x + (126 * scale);
-inventory_y = inv_UI_y + (14 * scale);
-inventory_yincrement = 19 * scale;
+inventory_x = inv_UI_x + (102 * scale);
+inventory_y = inv_UI_y + (11 * scale);
+inventory_yincrement = 22 * scale;
+
+inv_description_x = info_x;
+inv_description_y = inv_UI_y + 172;
+radio_description_x = info_x;
+radio_description_y = inv_UI_y + 222;
 
 // Player Info
 // 0 --> Name
@@ -55,3 +59,5 @@ var yy = 0; repeat(inv_slots) {
 	ds_inventory[# 0, yy] = "None";
 	yy += 1;
 }
+
+ds_inventory[# 0, 0] = "Health Potion";

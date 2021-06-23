@@ -9,3 +9,4 @@ speedWalk = 1.25; // movement speed: 2.0 pixels a frame
 spriteRun = sprScientistRun;
 spriteIdle = sprScientist;
 localFrame = 0;
+global.move_control = true;

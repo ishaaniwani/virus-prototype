@@ -57,88 +57,84 @@ draw_text_color(gold_x, gold_y,
 
 
 if (show_items) {
-	//Draw Items Column of Inventory
-	draw_sprite_ext(sprite, 1, // which sprite to draw, what frame of it to draw
-				inv_UI_x, inv_UI_y, // the x and y of where to draw the sprite
-				scale, scale, 0, // how scaled up (x and y) the GUI should be, the rotation
-				c_aqua, 1 // color blending, and opacity
-				);
+		//Draw Items Column of Inventory
+		draw_sprite_ext(sprite, 1, // which sprite to draw, what frame of it to draw
+					inv_UI_x, inv_UI_y, // the x and y of where to draw the sprite
+					scale, scale, 0, // how scaled up (x and y) the GUI should be, the rotation
+					c_aqua, 1 // color blending, and opacity
+					);
 	
-	// Inventory
-	var ii, ix, iy, xx, yy, sx, sy, iitem, inv_grid;
-	ii = 0; ix = 0; iy = 0; inv_grid = ds_inventory; 
+		// Inventory
+		var ii, ix, iy, xx, yy, sx, sy, iitem, inv_grid;
+		ii = 0; ix = 0; iy = 0; inv_grid = ds_inventory; 
 	
-	repeat(inv_slots) {
-		// x, y location for slot
-		xx = slots_x + ((cell_size + x_buffer) * ix * scale);
-		yy = slots_y + ((cell_size + y_buffer) * iy * scale);
+		repeat(inv_slots) {
+			// x, y location for slot
+			xx = slots_x + ((cell_size + x_buffer) * ix * scale);
+			yy = slots_y + ((cell_size + y_buffer) * iy * scale);
 		
+			// Item
+			iitem = inv_grid[# 0, ii];
+			sx = (iitem mod spr_inv_items_columns) * cell_size;
+			sy = (iitem mod spr_inv_items_rows) * cell_size;
+		
+			//Draw Slot and Item
+			draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 1);
+		
+			switch(ii) {
+				case selected_slot:
+					if (iitem > 0) draw_sprite_part_ext(
+						spr_inv_items, 0, sx, sy, cell_size, cell_size, xx, yy, scale, scale, c_white, 1
+					);
+					gpu_set_blendmode(bm_add);
+					draw_sprite_part_ext(
+						sprite, 2, 0, 0, cell_size, cell_size, xx, yy, scale, scale, c_white, 0.5
+					);
+					gpu_set_blendmode(bm_normal);
+				break;
+			
+				case pickup_slot:
+					if (iitem > 0) draw_sprite_part_ext(
+						spr_inv_items, 0, sx, sy, cell_size, cell_size, xx, yy, scale, scale, c_white, 0.2
+					);
+				break;
+			
+				default:
+					if (iitem > 0) draw_sprite_part_ext(
+						spr_inv_items, 0, sx, sy, cell_size, cell_size, xx, yy, scale, scale, c_white, 1
+					);
+				break;
+			}
+	
+			// Draw Item Number
+			if (iitem > 0) {
+				var number = inv_grid[# 1, ii];
+				var c = c_white;
+				draw_text_color(xx + (3 * scale), yy + (3 * scale), string(number), c, c, c, c, 1);
+			}
+		
+			// Increment
+			ii += 1;
+			ix = ii mod inv_slots_width;
+			iy = ii div inv_slots_height;
+		}
+		
+	if (pickup_slot != -1) {
 		// Item
-		iitem = inv_grid[# 0, ii];
+		iitem = inv_grid[# 0, pickup_slot];
 		sx = (iitem mod spr_inv_items_columns) * cell_size;
 		sy = (iitem mod spr_inv_items_rows) * cell_size;
-		
-		// Draw Slot and Item
-		if (iitem > 0) {
-			switch (ii) {
-				case selected_slot:
-					//Draw Slot
-					draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 1);
-					gpu_set_blendmode(bm_add);
-					draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 0.5);
-					gpu_set_blendmode(bm_normal);
-					
-				break;
-				
-				case pickup_slot:
-					draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 0.5);
-				
-				default:
-					//Draw Slot
-					draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 1);
-					break;
-			}
-			
-			
-			// Draw Item
-			draw_sprite_part_ext(
-				spr_inv_items, 0, 
-				sx, sy, cell_size, cell_size,
-				xx, yy, scale, scale, c_white, 1
-			);
-		}
-		
-		// Draw Item Number
-		if (iitem > 0) {
-			var number = inv_grid[# 1, ii];
-			var c = c_white;
-			draw_text_color(xx + (3 * scale), yy + (3 * scale), string(number), c, c, c, c, 1);
-		}
-		
-		// Increment
-		ii += 1;
-		ix = ii mod inv_slots_width;
-		iy = ii div inv_slots_height;
-	}
+		// Draw Item
+		draw_sprite_part_ext(
+						spr_inv_items, 0, 
+						sx, sy, cell_size, cell_size,
+						mousex, mousey, scale, scale, c_white, 1
+		);
 	
+		var inum = inv_grid[# 1, pickup_slot];
+		draw_text_color(mousex + (cell_size * scale * 0.5), mousey, string(inum), c, c, c, c, 1);
+	}
 	if (keyMenu) {
-		show_items = false;	
+			show_items = false;	
 	}
-}
-
-
-if (pickup_slot != -1) {
-	// Item
-	iitem = inv_grid[# 0, pickup_slot];
-	sx = (iitem mod spr_inv_items_columns) * cell_size;
-	sy = (iitem mod spr_inv_items_rows) * cell_size;
-	// Draw Item
-	draw_sprite_part_ext(
-				spr_inv_items, 0, 
-				sx, sy, cell_size, cell_size,
-				mousex, mousey, scale, scale, c_white, 1
-	);
-	
-	var inum = inv_grid[# 1, pickup_slot];
-	draw_text_color(mousex + (cell_size * scale * 0.5), mousey, string(inum), c, c, c, c, 1);
 }

@@ -90,10 +90,13 @@ ds_inventory = ds_grid_create(2, inv_slots);
 enum item {
 	none			= 0,
 	health_potion	= 1,
-	height			= 2
+	green_potion	= 2,
+	height			= 3
 }
 
 // Give Player Sample Inventory
-ds_inventory[# 0, 0] = item.health_potion;
-ds_inventory[# 1, 0] = item.health_potion;
-ds_inventory[# 2, 2] = item.health_potion;
+var yy = 0; repeat(inv_slots) {
+	ds_inventory[# 0, yy] = irandom_range(1, item.height - 1);
+	ds_inventory[# 1, yy] = irandom_range(1, 10);
+	yy += 1;	
+}

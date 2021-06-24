@@ -8,7 +8,7 @@ inv_slots_width = 3;
 inv_slots_height = 3;
 
 selected_slot = 0;
-pickup_item = -1;
+pickup_slot = -1;
 m_slotx = 0;
 m_sloty = 0;
 
@@ -96,3 +96,4 @@ enum item {
 // Give Player Sample Inventory
 ds_inventory[# 0, 0] = item.health_potion;
 ds_inventory[# 1, 0] = item.health_potion;
+ds_inventory[# 2, 2] = item.health_potion;

@@ -89,6 +89,10 @@ if (show_items) {
 					gpu_set_blendmode(bm_normal);
 					
 				break;
+				
+				case pickup_slot:
+					draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 0.5);
+				
 				default:
 					//Draw Slot
 					draw_sprite_ext(sprite, 2, xx, yy, scale, scale, 0, c_aqua, 1);
@@ -120,4 +124,21 @@ if (show_items) {
 	if (keyMenu) {
 		show_items = false;	
 	}
+}
+
+
+if (pickup_slot != -1) {
+	// Item
+	iitem = inv_grid[# 0, pickup_slot];
+	sx = (iitem mod spr_inv_items_columns) * cell_size;
+	sy = (iitem mod spr_inv_items_rows) * cell_size;
+	// Draw Item
+	draw_sprite_part_ext(
+				spr_inv_items, 0, 
+				sx, sy, cell_size, cell_size,
+				mousex, mousey, scale, scale, c_white, 1
+	);
+	
+	var inum = inv_grid[# 1, pickup_slot];
+	draw_text_color(mousex + (cell_size * scale * 0.5), mousey, string(inum), c, c, c, c, 1);
 }

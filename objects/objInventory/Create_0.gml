@@ -63,6 +63,13 @@ radio_button_y = inv_description_y + (15 * scale);
 slots_x = inv_UI_x + (96 * scale);
 slots_y = inv_UI_y + (25 * scale);
 
+// Item Description
+desc_x = info_x;
+desc_y = inv_UI_y + (105 * scale);
+
+// Where to wrap text
+wrap_x = inv_UI_x + (30 * scale);
+
 x_buffer = 16;
 y_buffer = 16;
 
@@ -93,6 +100,24 @@ enum item {
 	green_potion	= 2,
 	height			= 3
 }
+
+#region Create Items Info Grid
+ds_items_info = ds_grid_create(2, item.height);
+
+//---Item Names
+var z = 0, i = 0;
+ds_items_info[# z, i++] = "Nothing";
+ds_items_info[# z, i++] = "Health Potion";
+ds_items_info[# z, i++] = "Green Potion";
+
+//---Item Description
+z = 1; i = 0;
+ds_items_info[# z, i++] = "Empty.";
+ds_items_info[# z, i++] = "A red potion, I hope its not blood. Gives HP!";
+ds_items_info[# z, i++] = "This is just water dyed green. Bruh.";
+
+#endregion
+
 
 // Give Player Sample Inventory
 var yy = 0; repeat(inv_slots) {

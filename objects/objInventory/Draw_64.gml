@@ -118,7 +118,19 @@ if (show_items) {
 			ix = ii mod inv_slots_width;
 			iy = ii div inv_slots_height;
 		}
-		
+	
+	// Draw Item Description
+	var iinfo_grid = ds_items_info, description = "";
+	iitem = inv_grid[# 0, selected_slot];
+	
+	if (iitem > 0) {
+		draw_set_font(fntMediumText);
+		description = iinfo_grid[# 0, iitem] + ". " + iinfo_grid[# 1, iitem];
+		c = c_white;
+		draw_text_ext_color(desc_x, desc_y, description, string_height("M"), wrap_x, c, c, c, c, 1);
+	}
+	
+	
 	if (pickup_slot != -1) {
 		// Item
 		iitem = inv_grid[# 0, pickup_slot];

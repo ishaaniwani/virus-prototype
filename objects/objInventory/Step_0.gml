@@ -33,6 +33,7 @@ var i_mousey = mousey - slots_y;
 var nx = i_mousex div cell_xbuff;
 var ny = i_mousey div cell_ybuff;
 
+var mouse_in_inventory = true;
 if (nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height) {
 	var sx = i_mousex - (nx * cell_xbuff);
 	var sy = i_mousey - (ny * cell_xbuff);
@@ -41,6 +42,8 @@ if (nx >= 0 and nx < inv_slots_width and ny >= 0 and ny < inv_slots_height) {
 		m_slotx = nx;
 		m_sloty = ny;	
 	}
+} else {
+	mouse_in_inventory = false;
 }
 
 // Set Selected Slot to Mouse Position
@@ -52,7 +55,27 @@ var ss_item = inv_grid[# 0, selected_slot];
 
 if(pickup_slot != -1) {
 	if (mouse_check_button_pressed(mb_left)) {
-		if (ss_item == item.none) {
+		if (!mouse_in_inventory) {
+			#region //Drop Item into Game World
+			var pitem = inv_grid[# 0, pickup_slot];
+			inv_grid[# 1, pickup_slot] -= 1;
+			
+			// destroy item in inventory if it was the last one
+			if (inv_grid[# 1, pickup_slot] == 0) {
+				inv_grid[# 0, pickup_slot] = item.none;
+				pickup_slot = -1;
+			}
+		
+			// Create the item.
+			var inst = instance_create_layer(objScientist.x, objScientist.y, "Instances", objItem);
+			with(inst) {
+				item_num = pitem;
+				x_frame = item_num mod (spr_width / cell_size);
+				y_frame = item_num div (spr_width / cell_size);
+			}
+			show_debug_message("Dropped an item.");	
+			#endregion
+		} else if (ss_item == item.none) {
 			inv_grid[# 0, selected_slot] = inv_grid[# 0, pickup_slot];
 			inv_grid[# 1, selected_slot] = inv_grid[# 1, pickup_slot];
 			

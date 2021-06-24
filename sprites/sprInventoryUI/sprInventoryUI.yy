@@ -24,9 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6ff4ce92-fbb3-4607-b8d3-61d92840a5de","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6ff4ce92-fbb3-4607-b8d3-61d92840a5de","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":{"name":"b1ea0b7a-f2fc-4d19-9156-2a054bc8f498","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"6ff4ce92-fbb3-4607-b8d3-61d92840a5de","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"02792c75-4d59-4130-9d67-06c78527ea74","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"02792c75-4d59-4130-9d67-06c78527ea74","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":{"name":"bd241b95-a7c0-4fe1-ab2a-39359cdea21a","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"02792c75-4d59-4130-9d67-06c78527ea74","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7edd46a5-7e1b-41f7-a0aa-b0b4b0c21196","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7edd46a5-7e1b-41f7-a0aa-b0b4b0c21196","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":{"name":"bd241b95-a7c0-4fe1-ab2a-39359cdea21a","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"7edd46a5-7e1b-41f7-a0aa-b0b4b0c21196","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"75e6f183-cb6a-4f2f-b154-3a9d13af2bfc","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"75e6f183-cb6a-4f2f-b154-3a9d13af2bfc","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"LayerId":{"name":"bd241b95-a7c0-4fe1-ab2a-39359cdea21a","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","name":"75e6f183-cb6a-4f2f-b154-3a9d13af2bfc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},
@@ -36,12 +42,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"03f2eeec-2374-4166-a2f8-f94ce7395a8f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ff4ce92-fbb3-4607-b8d3-61d92840a5de","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ab8231c5-1342-4f4f-9d8b-2d6d542d1093","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"02792c75-4d59-4130-9d67-06c78527ea74","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6dbb87fb-712e-4d8e-bbf9-ea87aa1271b8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7edd46a5-7e1b-41f7-a0aa-b0b4b0c21196","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d84c52b7-786c-4e05-96c8-3a4b8d799e54","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75e6f183-cb6a-4f2f-b154-3a9d13af2bfc","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +73,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b1ea0b7a-f2fc-4d19-9156-2a054bc8f498","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bd241b95-a7c0-4fe1-ab2a-39359cdea21a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

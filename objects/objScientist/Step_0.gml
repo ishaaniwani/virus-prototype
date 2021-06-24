@@ -5,16 +5,9 @@ keyUp = keyboard_check(vk_up);
 keyDown = keyboard_check(vk_down);
 
 // Used to interact with game objects (ex. NPC dialogue)
-keyInteract = keyboard_check(ord("Z"));
+keyInteract = keyboard_check_pressed(ord("Z"));
 // Used to fast forward dialogue and exit menus
 keyExit = keyboard_check(ord("X"));
-// Used to open menu
-keyMenu = keyboard_check_pressed(ord("C"));
-
-if (keyMenu) {
-	global.show_inventory = !global.show_inventory;
-	global.move_control = !global.move_control;
-}
 
 // Determine direction of player
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);

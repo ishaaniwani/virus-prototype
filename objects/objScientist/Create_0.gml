@@ -1,3 +1,4 @@
+depth = -2;
 image_speed = 0;
 hSpeed = 0; // horizontal speed
 vSpeed = 0; // vertical speed

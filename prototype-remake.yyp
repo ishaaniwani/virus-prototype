@@ -5,6 +5,8 @@
     {"id":{"name":"sprXButton","path":"sprites/sprXButton/sprXButton.yy",},"order":6,},
     {"id":{"name":"objInventory","path":"objects/objInventory/objInventory.yy",},"order":3,},
     {"id":{"name":"objWall","path":"objects/objWall/objWall.yy",},"order":1,},
+    {"id":{"name":"vgmenuselect","path":"sounds/vgmenuselect/vgmenuselect.yy",},"order":0,},
+    {"id":{"name":"Menu_Selection_Click","path":"sounds/Menu_Selection_Click/Menu_Selection_Click.yy",},"order":1,},
     {"id":{"name":"objScientist","path":"objects/objScientist/objScientist.yy",},"order":0,},
     {"id":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"order":4,},
     {"id":{"name":"sprScientistRun","path":"sprites/sprScientistRun/sprScientistRun.yy",},"order":2,},

@@ -1,14 +1,19 @@
 keyMenu = keyboard_check_pressed(ord("C"));
-keyRadio = keyboard_check_pressed(ord("X"));
-
+keyItems = keyboard_check_pressed(ord("X"));
 
 if (keyMenu and show_items == false) {
 	show_inventory = !show_inventory;
 	global.move_control = !global.move_control;
+	if (show_inventory) {
+		audio_play_sound(vgmenuselect, 1, false);
+	}
 }
 
-if (show_inventory and keyRadio) {
-	show_items = true;	
+if (show_inventory and keyItems) {
+	if (!show_items) {
+		audio_play_sound(Menu_Selection_Click, 1, false);
+	}	
+	show_items = true;
 } else if (show_inventory and show_items and keyMenu) {
 	show_items = false;	
 }

@@ -1,4 +1,4 @@
-depth = -1;
+//depth = -1;
 scale = 3;
 show_inventory = false;
 show_items = false;

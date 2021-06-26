@@ -1,4 +1,6 @@
-depth = -1;
+event_inherited();
+
+//depth = -1;
 
 cell_size = 32;
 item_spr = sprInventoryItems;

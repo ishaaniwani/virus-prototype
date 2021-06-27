@@ -15,12 +15,10 @@ function PlayerCollision(){
 		_collision = true;
 	}
 	
-	if(global.move_control) {
-		// Vertical Move Commit
-		y += vSpeed;
-		// Horizontal Move Commit
-		x += hSpeed;	
-	}
-
+	// Vertical Move Commit
+	y += vSpeed;
+	// Horizontal Move Commit
+	x += hSpeed;
+	
 	return _collision;
 }

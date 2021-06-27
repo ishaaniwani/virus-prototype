@@ -1,6 +1,4 @@
 event_inherited();
-
-//depth = -2;
 image_speed = 0;
 hSpeed = 0; // horizontal speed
 vSpeed = 0; // vertical speed
@@ -10,4 +8,3 @@ speedWalk = 1.25; // movement speed: 2.0 pixels a frame
 spriteRun = sprScientistRun;
 spriteIdle = sprScientist;
 localFrame = 0;
-global.move_control = true;

@@ -3,12 +3,19 @@
     {"id":{"name":"objWall","path":"objects/objWall/objWall.yy",},"order":1,},
     {"id":{"name":"objScientist","path":"objects/objScientist/objScientist.yy",},"order":0,},
     {"id":{"name":"sprScientistRun","path":"sprites/sprScientistRun/sprScientistRun.yy",},"order":2,},
+    {"id":{"name":"objMouseFollower","path":"objects/objMouseFollower/objMouseFollower.yy",},"order":3,},
+    {"id":{"name":"StartRoom","path":"rooms/StartRoom/StartRoom.yy",},"order":1,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":2,},
+    {"id":{"name":"objRoomSwitcher","path":"objects/objRoomSwitcher/objRoomSwitcher.yy",},"order":4,},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},"order":3,},
+    {"id":{"name":"souStartClick","path":"sounds/souStartClick/souStartClick.yy",},"order":0,},
     {"id":{"name":"sprStartingRoom","path":"sprites/sprStartingRoom/sprStartingRoom.yy",},"order":1,},
     {"id":{"name":"PlayerAnimateSprite","path":"scripts/PlayerAnimateSprite/PlayerAnimateSprite.yy",},"order":0,},
+    {"id":{"name":"sprMouseFollower","path":"sprites/sprMouseFollower/sprMouseFollower.yy",},"order":5,},
     {"id":{"name":"sprScientist","path":"sprites/sprScientist/sprScientist.yy",},"order":0,},
+    {"id":{"name":"sprStartButton","path":"sprites/sprStartButton/sprStartButton.yy",},"order":4,},
     {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":3,},
+    {"id":{"name":"objStartButton","path":"objects/objStartButton/objStartButton.yy",},"order":2,},
     {"id":{"name":"room0","path":"rooms/room0/room0.yy",},"order":0,},
   ],
   "Options": [
@@ -23,6 +30,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"StartRoom","path":"rooms/StartRoom/StartRoom.yy",},},
     {"roomId":{"name":"room0","path":"rooms/room0/room0.yy",},},
   ],
   "Folders": [
@@ -49,7 +57,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "prototype-remake",

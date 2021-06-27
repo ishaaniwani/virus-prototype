@@ -8,6 +8,7 @@
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":2,},
     {"id":{"name":"objRoomSwitcher","path":"objects/objRoomSwitcher/objRoomSwitcher.yy",},"order":4,},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},"order":3,},
+    {"id":{"name":"souStartClick","path":"sounds/souStartClick/souStartClick.yy",},"order":0,},
     {"id":{"name":"sprStartingRoom","path":"sprites/sprStartingRoom/sprStartingRoom.yy",},"order":1,},
     {"id":{"name":"PlayerAnimateSprite","path":"scripts/PlayerAnimateSprite/PlayerAnimateSprite.yy",},"order":0,},
     {"id":{"name":"sprMouseFollower","path":"sprites/sprMouseFollower/sprMouseFollower.yy",},"order":5,},

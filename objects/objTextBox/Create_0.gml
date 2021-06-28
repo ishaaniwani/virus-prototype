@@ -28,10 +28,11 @@ text_max_width = box_width - (2 * x_buffer)
 
 portrait_index = 0;
 counter = 0;
+pause = false;
 text_slot = 0;
 
-text[0] = "This is a test string this is a test string this is a test string this is";
-text[1] = "this is the second page";
+text[0] = "This is a test string! this is a test string? this, is a test string";
+text[1] = "this is the second page. Bruh moment right here is it not?";
 page = 0;
 name = "Name";
 voice = snd_voice2;
@@ -48,3 +49,5 @@ name_text_y = box_y + y_buffer;
 
 text_x = box_x + 2 * x_buffer - (5 * scale);
 text_y = name_text_y + (text_height * 2 / 3);
+
+event_perform(ev_other, ev_user1);

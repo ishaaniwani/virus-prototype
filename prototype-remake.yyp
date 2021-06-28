@@ -15,6 +15,7 @@
     {"id":{"name":"objChest","path":"objects/objChest/objChest.yy",},"order":0,},
     {"id":{"name":"objMouseFollower","path":"objects/objMouseFollower/objMouseFollower.yy",},"order":1,},
     {"id":{"name":"sprTextBox","path":"sprites/sprTextBox/sprTextBox.yy",},"order":6,},
+    {"id":{"name":"StringWrap","path":"scripts/StringWrap/StringWrap.yy",},"order":4,},
     {"id":{"name":"sprZButton","path":"sprites/sprZButton/sprZButton.yy",},"order":4,},
     {"id":{"name":"objDepthSorter","path":"objects/objDepthSorter/objDepthSorter.yy",},"order":0,},
     {"id":{"name":"StartRoom","path":"rooms/StartRoom/StartRoom.yy",},"order":1,},

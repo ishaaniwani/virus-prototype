@@ -38,8 +38,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Inventory and UI",
+    "path": "folders/Objects/Inventory and UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "objChest",

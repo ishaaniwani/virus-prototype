@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprWall",
-    "path": "sprites/sprWall/sprWall.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,15 +17,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Misc",
-    "path": "folders/Objects/Misc.yy",
+    "name": "Inventory and UI",
+    "path": "folders/Objects/Inventory and UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objWall",
+  "name": "objTextBox",
   "tags": [],
   "resourceType": "GMObject",
 }

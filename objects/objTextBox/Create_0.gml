@@ -21,4 +21,25 @@ box_y = port_y;
 namebox_x = port_x;
 namebox_y = box_y - namebox_height;
 
+x_buffer = 10 * scale;
+y_buffer = 12 * scale;
+
+text_max_width = box_width - (2 * x_buffer)
+
 portrait_index = 0;
+
+text = "This is a test string this is a test string this is a test string this is";
+name = "Name";
+
+text_col = c_white;
+name_col = c_yellow;
+font = fntBigText;
+
+draw_set_font(font);
+text_height = 0.5 * string_height("M") * scale;
+
+name_text_x = box_x + (box_width / 2) + (5 * scale);
+name_text_y = box_y + y_buffer;
+
+text_x = box_x + 2 * x_buffer - (5 * scale);
+text_y = name_text_y + (text_height * 2 / 3);

@@ -1,7 +1,7 @@
 if (drop_move) {
 	x = lerp(x, goal_x, 0.1);
 	y = lerp(y, goal_y, 0.1);
-	if ( abs(x - goal_x) < 1 and abs(y - goal_y) < 1) {
+	if ( (abs(x - goal_x) < 1 and abs(y - goal_y) < 1) or place_meeting(x, y, objWall)) {
 		drop_move = false;	
 	}
 } else {
@@ -9,7 +9,7 @@ if (drop_move) {
 	
 	var px = objScientist.x;
 	var py = objScientist.y;
-	var r = 10;
+	var r = 16;
 	
 	if (point_in_rectangle(px, py, x - r, y - r, x + r, y + r)) {
 		

@@ -27,9 +27,14 @@ y_buffer = 12 * scale;
 text_max_width = box_width - (2 * x_buffer)
 
 portrait_index = 0;
+counter = 0;
+text_slot = 0;
 
-text = "This is a test string this is a test string this is a test string this is";
+text[0] = "This is a test string this is a test string this is a test string this is";
+text[1] = "this is the second page";
+page = 0;
 name = "Name";
+voice = snd_voice2;
 
 text_col = c_white;
 name_col = c_yellow;

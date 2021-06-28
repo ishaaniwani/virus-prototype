@@ -1,5 +1,4 @@
-collisionMap = layer_tilemap_get_id(layer_get_id("Collisions"));
-
+event_inherited();
 image_speed = 0;
 hSpeed = 0; // horizontal speed
 vSpeed = 0; // vertical speed

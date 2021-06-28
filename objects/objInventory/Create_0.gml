@@ -1,4 +1,4 @@
-depth = -1;
+//depth = -1;
 scale = 3;
 show_inventory = false;
 show_items = false;
@@ -124,4 +124,5 @@ var yy = 0; repeat(inv_slots) {
 	ds_inventory[# 0, yy] = irandom_range(1, item.height - 1);
 	ds_inventory[# 1, yy] = irandom_range(1, 10);
 	yy += 1;	
-}
+}/// @description Insert description here
+// You can write your code in this editor

@@ -31,10 +31,9 @@ counter = 0;
 pause = false;
 text_slot = 0;
 
-text[0] = "This is a test string! this is a test string? this, is a test string";
-text[1] = "this is the second page. Bruh moment right here is it not?";
+text[0] = "";
 page = 0;
-name = "Name";
+name = "";
 voice = snd_voice2;
 
 text_col = c_white;

@@ -8,3 +8,8 @@ speedWalk = 1.25; // movement speed: 2.0 pixels a frame
 spriteRun = sprScientistRun;
 spriteIdle = sprScientist;
 localFrame = 0;
+
+portrait_index = 0;
+voice = snd_voice2;
+speaker_name = "Scientist";
+speakers = [id];

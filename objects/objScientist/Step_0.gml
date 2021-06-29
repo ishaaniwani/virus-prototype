@@ -40,3 +40,12 @@ if (_oldSprite != sprite_index) localFrame = 0;
 
 //Update Image Index
 PlayerAnimateSprite();
+
+if(keyInteract) {
+	var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
+						objParentNPCObject, false, false);
+	
+	if (inst != noone) {
+		show_debug_message("would have triggered");	
+	}
+}

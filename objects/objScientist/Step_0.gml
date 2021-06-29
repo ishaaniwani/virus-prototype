@@ -9,8 +9,36 @@ keyInteract = keyboard_check_pressed(ord("Z"));
 // Used to fast forward dialogue and exit menus
 keyExit = keyboard_check(ord("X"));
 
+if(keyInteract and !inventory_opened) {
+	
+	if (active_textbox == noone) {
+		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
+							objParentNPCObject, false, false);
+	
+		if (inst != noone) {
+			with (inst) {
+				show_debug_message("Triggered");
+				var tbox = CreateTextbox(text, speakers);	
+			}
+			active_textbox = tbox;
+			in_conversation = true;
+		}
+	} else {
+		if (!instance_exists(active_textbox)) {
+			active_textbox = noone;
+		}
+	}
+}
+
+if (in_conversation or inventory_opened) {
+	sprite_index = spriteIdle;
+	image_index = player_direction;
+	exit;
+}
+
 // Determine direction of player
 inputDirection = point_direction(0, 0, keyRight - keyLeft, keyDown - keyUp);
+
 // Determine if inputs aren't cancelling each other out
 inputMagnitude = (keyRight - keyLeft != 0) or (keyDown - keyUp != 0);
 
@@ -40,24 +68,3 @@ if (_oldSprite != sprite_index) localFrame = 0;
 
 //Update Image Index
 PlayerAnimateSprite();
-
-if(keyInteract) {
-	
-	if (active_textbox == noone) {
-		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
-							objParentNPCObject, false, false);
-	
-		if (inst != noone) {
-			global.move_control = false;
-			with (inst) {
-				show_debug_message("Triggered");
-				var tbox = CreateTextbox(text, speakers);	
-			}
-			active_textbox = tbox;
-		}
-	} else {
-		if (!instance_exists(active_textbox)) {
-			active_textbox = noone;
-		}
-	}
-}

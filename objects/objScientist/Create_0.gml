@@ -1,4 +1,5 @@
 event_inherited();
+
 image_speed = 0;
 hSpeed = 0; // horizontal speed
 vSpeed = 0; // vertical speed
@@ -15,3 +16,7 @@ speaker_name = "Scientist";
 
 radius = 16;
 active_textbox = noone;
+
+in_conversation = false;
+inventory_opened = false
+player_direction = 0;

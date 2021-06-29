@@ -48,3 +48,4 @@ name_text_y = box_y + y_buffer;
 
 text_x = box_x + 2 * x_buffer - (5 * scale);
 text_y = name_text_y + (text_height * 2 / 3);
+

@@ -42,13 +42,22 @@ if (_oldSprite != sprite_index) localFrame = 0;
 PlayerAnimateSprite();
 
 if(keyInteract) {
-	var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
-						objParentNPCObject, false, false);
 	
-	if (inst != noone) {
-		with (inst) {
-			show_debug_message("Triggered");
-			CreateTextbox(text, speaker_name);	
+	if (active_textbox == noone) {
+		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
+							objParentNPCObject, false, false);
+	
+		if (inst != noone) {
+			global.move_control = false;
+			with (inst) {
+				show_debug_message("Triggered");
+				var tbox = CreateTextbox(text, speakers);	
+			}
+			active_textbox = tbox;
+		}
+	} else {
+		if (!instance_exists(active_textbox)) {
+			active_textbox = noone;
 		}
 	}
 }

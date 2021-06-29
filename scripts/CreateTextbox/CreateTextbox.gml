@@ -11,11 +11,12 @@ function CreateTextbox(_text, _speakers){
 		
 		var len = array_length_1d(text);
 		var i = 0; repeat(len) {
-			names[i] = speakers[i].speaker_name;
-			portraits[i] = speakers[i].portrait_index;
-			voices[i] = speakers[i].voice;
+			names[i] = _speakers[i].speaker_name;
+			portraits[i] = _speakers[i].portrait_index;
+			voices[i] = _speakers[i].voice;
 			i++;
 		}
+		event_perform(ev_other, ev_user1);
 	}
 	
 	return tbox;

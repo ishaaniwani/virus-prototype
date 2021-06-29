@@ -29,6 +29,7 @@
     {"id":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"order":1,},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},"order":0,},
     {"id":{"name":"sprPortraitFrame","path":"sprites/sprPortraitFrame/sprPortraitFrame.yy",},"order":8,},
+    {"id":{"name":"snd_voice1","path":"sounds/snd_voice1/snd_voice1.yy",},"order":5,},
     {"id":{"name":"souStartClick","path":"sounds/souStartClick/souStartClick.yy",},"order":0,},
     {"id":{"name":"sprStartingRoom","path":"sprites/sprStartingRoom/sprStartingRoom.yy",},"order":0,},
     {"id":{"name":"objParentDepthObject","path":"objects/objParentDepthObject/objParentDepthObject.yy",},"order":2,},

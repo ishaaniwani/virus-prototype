@@ -33,7 +33,7 @@ text_slot = 0;
 
 text[0] = "";
 page = 0;
-name = "";
+speaker_name = "";
 voice = snd_voice2;
 
 text_col = c_white;
@@ -48,5 +48,3 @@ name_text_y = box_y + y_buffer;
 
 text_x = box_x + 2 * x_buffer - (5 * scale);
 text_y = name_text_y + (text_height * 2 / 3);
-
-event_perform(ev_other, ev_user1);

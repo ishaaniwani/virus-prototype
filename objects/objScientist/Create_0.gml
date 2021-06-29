@@ -10,7 +10,8 @@ spriteIdle = sprScientist;
 localFrame = 0;
 
 portrait_index = 0;
-voice = snd_voice2;
+voice = snd_voice1;
 speaker_name = "Scientist";
 
 radius = 16;
+active_textbox = noone;

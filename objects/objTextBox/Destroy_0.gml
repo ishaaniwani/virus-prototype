@@ -1,0 +1,1 @@
+global.move_control = true;

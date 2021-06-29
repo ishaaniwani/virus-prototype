@@ -5,6 +5,7 @@
     {"id":{"name":"sprInventoryItems","path":"sprites/sprInventoryItems/sprInventoryItems.yy",},"order":0,},
     {"id":{"name":"fntMediumText","path":"fonts/fntMediumText/fntMediumText.yy",},"order":1,},
     {"id":{"name":"objScientist","path":"objects/objScientist/objScientist.yy",},"order":0,},
+    {"id":{"name":"CreateTextbox","path":"scripts/CreateTextbox/CreateTextbox.yy",},"order":5,},
     {"id":{"name":"snd_voice2","path":"sounds/snd_voice2/snd_voice2.yy",},"order":4,},
     {"id":{"name":"objTextBox","path":"objects/objTextBox/objTextBox.yy",},"order":4,},
     {"id":{"name":"sprPortraits","path":"sprites/sprPortraits/sprPortraits.yy",},"order":5,},

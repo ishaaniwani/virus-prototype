@@ -46,6 +46,9 @@ if(keyInteract) {
 						objParentNPCObject, false, false);
 	
 	if (inst != noone) {
-		show_debug_message("would have triggered");	
+		with (inst) {
+			show_debug_message("Triggered");
+			CreateTextbox(text, speaker_name);	
+		}
 	}
 }

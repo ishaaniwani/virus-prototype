@@ -1,6 +1,8 @@
-voice = snd_voice2;
+voice = snd_voice3;
 type = "Interactable";
-text = ["Hey there! I'm Crouton!",
-		"Hey, aren't they putting you in the actual game?",
-		"Yup! I'm excited."];
-speakers = [id, objScientist, id];
+
+text = ["Captured by the flowers natural beauty, you cant help but take a whiff- It smells like... Nothing.",
+		"Its plastic. Embarrassed, you pretend to divert your attention elsewhere."
+		];
+		
+speakers = [id, id];

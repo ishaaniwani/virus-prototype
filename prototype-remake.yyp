@@ -27,6 +27,7 @@
     {"id":{"name":"StartRoom","path":"rooms/StartRoom/StartRoom.yy",},"order":1,},
     {"id":{"name":"sprCrouton","path":"sprites/sprCrouton/sprCrouton.yy",},"order":2,},
     {"id":{"name":"objInventory","path":"objects/objInventory/objInventory.yy",},"order":1,},
+    {"id":{"name":"snd_voice3","path":"sounds/snd_voice3/snd_voice3.yy",},"order":6,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":2,},
     {"id":{"name":"objRoomSwitcher","path":"objects/objRoomSwitcher/objRoomSwitcher.yy",},"order":3,},
     {"id":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"order":1,},

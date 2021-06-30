@@ -18,6 +18,7 @@
     {"id":{"name":"RemoveVelvetRope","path":"scripts/RemoveVelvetRope/RemoveVelvetRope.yy",},"order":7,},
     {"id":{"name":"sfxwoodenobject","path":"sounds/sfxwoodenobject/sfxwoodenobject.yy",},"order":1,},
     {"id":{"name":"objChest","path":"objects/objChest/objChest.yy",},"order":0,},
+    {"id":{"name":"ScriptExecuteAlt","path":"scripts/ScriptExecuteAlt/ScriptExecuteAlt.yy",},"order":9,},
     {"id":{"name":"objMouseFollower","path":"objects/objMouseFollower/objMouseFollower.yy",},"order":1,},
     {"id":{"name":"objDescriptionBox","path":"objects/objDescriptionBox/objDescriptionBox.yy",},"order":5,},
     {"id":{"name":"sprTextBox","path":"sprites/sprTextBox/sprTextBox.yy",},"order":6,},

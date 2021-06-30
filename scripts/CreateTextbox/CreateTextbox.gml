@@ -2,13 +2,14 @@
 
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function CreateTextbox(_text, _speakers, _next_line){
+function CreateTextbox(_text, _speakers, _next_line, _scripts){
 	var tbox = instance_create_layer(0, 0, "Text", objTextBox);
 	
 	with(tbox) {
 		text = _text;
 		speakers = _speakers;
 		next_line = _next_line;
+		scripts = _scripts;
 		
 		var len = array_length_1d(text);
 		var i = 0; repeat(len) {

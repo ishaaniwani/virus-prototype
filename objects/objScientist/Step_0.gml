@@ -21,7 +21,7 @@ if(keyInteract and !inventory_opened) {
 		if (inst_npc != noone) {
 			with (inst_npc) {
 				if (array_length_1d(text) == 0) exit; // could be problematic in the future.
-				var tbox = CreateTextbox(text, speakers, next_line);		
+				var tbox = CreateTextbox(text, speakers, next_line, scripts);		
 			}
 			active_textbox = tbox;
 			in_conversation = true;

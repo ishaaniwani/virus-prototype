@@ -7,6 +7,8 @@ if (keyboard_check_pressed(ord("Z"))) {
 		counter = str_len;
 	} else if(page < array_length_1d(text) - 1) {
 		
+		event_perform(ev_other, ev_user2);
+		
 		var line = next_line[page];
 		
 		if (choice_dialogue) {	

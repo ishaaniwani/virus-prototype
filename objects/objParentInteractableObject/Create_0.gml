@@ -1,3 +1,4 @@
+type = "Interactable";
 voice = snd_voice2;
 text = ["Hey there! I'm Crouton!",
 		"Hey, aren't they putting you in the actual game?",

@@ -12,13 +12,21 @@ keyExit = keyboard_check(ord("X"));
 if(keyInteract and !inventory_opened) {
 	
 	if (active_textbox == noone) {
-		var inst = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
+		var inst_npc = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
 							objParentNPCObject, false, false);
+							
+		var inst_obj = collision_rectangle(x - radius, y - radius, x + radius, y + radius,
+							objParentInteractableObject, false, false);
 	
-		if (inst != noone) {
-			with (inst) {
-				show_debug_message("Triggered");
-				var tbox = CreateTextbox(text, speakers);	
+		if (inst_npc != noone) {
+			with (inst_npc) {
+				var tbox = CreateTextbox(text, speakers);		
+			}
+			active_textbox = tbox;
+			in_conversation = true;
+		} else if (inst_obj != noone) {
+			with (inst_obj) {
+				var tbox = CreateDescriptionTextbox(text, speakers);	
 			}
 			active_textbox = tbox;
 			in_conversation = true;

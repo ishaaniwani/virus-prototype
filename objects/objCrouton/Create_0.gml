@@ -6,7 +6,15 @@ text = ["Hey there! I'm Crouton!",
 		"Hey, aren't they putting you in the actual game?",
 		"Yup! I'm excited.",
 		["* I'm happy for you.", "* I'm more handsome."],
-		"Thanks!",
+		"Thanks for supporting me! I've unlocked the velvet rope.",
 		"Shove Off."];
 speakers = [id, objScientist, id, objScientist, id, id]; // must be a speaker for each line
 next_line = [0, 0, 0, [4, 5], -1, -1]; // you may need to add some zeros
+scripts = [
+	-1,
+	-1,
+	-1,
+	-1,
+	[RemoveVelvetRope],
+	-1,
+];

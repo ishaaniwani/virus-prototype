@@ -8,6 +8,7 @@
     {"id":{"name":"CreateTextbox","path":"scripts/CreateTextbox/CreateTextbox.yy",},"order":5,},
     {"id":{"name":"snd_voice2","path":"sounds/snd_voice2/snd_voice2.yy",},"order":4,},
     {"id":{"name":"objTextBox","path":"objects/objTextBox/objTextBox.yy",},"order":4,},
+    {"id":{"name":"sprVelvetRope","path":"sprites/sprVelvetRope/sprVelvetRope.yy",},"order":2,},
     {"id":{"name":"sprPortraits","path":"sprites/sprPortraits/sprPortraits.yy",},"order":5,},
     {"id":{"name":"sprScientistRun","path":"sprites/sprScientistRun/sprScientistRun.yy",},"order":1,},
     {"id":{"name":"objParentNPCObject","path":"objects/objParentNPCObject/objParentNPCObject.yy",},"order":4,},
@@ -46,6 +47,7 @@
     {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":3,},
     {"id":{"name":"objItem","path":"objects/objItem/objItem.yy",},"order":2,},
     {"id":{"name":"objStartButton","path":"objects/objStartButton/objStartButton.yy",},"order":3,},
+    {"id":{"name":"objVelvetRope","path":"objects/objVelvetRope/objVelvetRope.yy",},"order":0,},
     {"id":{"name":"objPlant","path":"objects/objPlant/objPlant.yy",},"order":2,},
     {"id":{"name":"vgmenuselect","path":"sounds/vgmenuselect/vgmenuselect.yy",},"order":2,},
     {"id":{"name":"sprPlant","path":"sprites/sprPlant/sprPlant.yy",},"order":1,},
@@ -91,6 +93,7 @@
     {"folderPath":"folders/Objects/Inventory and UI.yy","order":11,"resourceVersion":"1.0","name":"Inventory and UI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Characters.yy","order":12,"resourceVersion":"1.0","name":"Characters","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Misc.yy","order":13,"resourceVersion":"1.0","name":"Misc","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Interactables.yy","order":14,"resourceVersion":"1.0","name":"Interactables","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

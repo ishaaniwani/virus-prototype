@@ -20,7 +20,7 @@ if(keyInteract and !inventory_opened) {
 	
 		if (inst_npc != noone) {
 			with (inst_npc) {
-				var tbox = CreateTextbox(text, speakers);		
+				var tbox = CreateTextbox(text, speakers, next_line);		
 			}
 			active_textbox = tbox;
 			in_conversation = true;

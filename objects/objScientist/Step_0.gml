@@ -20,12 +20,14 @@ if(keyInteract and !inventory_opened) {
 	
 		if (inst_npc != noone) {
 			with (inst_npc) {
+				if (array_length_1d(text) == 0) exit; // could be problematic in the future.
 				var tbox = CreateTextbox(text, speakers, next_line);		
 			}
 			active_textbox = tbox;
 			in_conversation = true;
 		} else if (inst_obj != noone) {
 			with (inst_obj) {
+				if (array_length_1d(text) == 0) exit; // could be problematic in the future.
 				var tbox = CreateDescriptionTextbox(text, speakers);	
 			}
 			active_textbox = tbox;

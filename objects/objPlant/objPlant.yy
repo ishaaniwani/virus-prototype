@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "name": "Interactables",
+    "path": "folders/Objects/Interactables.yy",
   },
   "resourceVersion": "1.0",
   "name": "objPlant",

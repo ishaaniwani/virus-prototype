@@ -36,7 +36,7 @@ draw_set_halign(fa_center); draw_set_valign(fa_middle);
 draw_text_color(name_text_x, name_text_y, speaker_name, c, c, c, c, 1 );
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 
-if(!is_array(text[page])) {
+if(!choice_dialogue) {
 	// Draw Text
 	if (!pause and text_slot < str_len) {
 		counter++;
@@ -62,6 +62,13 @@ if(!is_array(text[page])) {
 } else {
 	c = text_col;
 	var i = 0, y_add = 0; repeat(text_array_len) {
+		if(choice == i){ 
+			c = choice_col;
+			draw_text_color(box_x + text_max_width, text_y + y_add, "<", c, c, c, c, 1);
+		} else {
+			c = text_col;
+		}
+		
 		draw_text_ext_color(text_x, text_y + y_add, text_array[i], text_height, text_max_width,
 						c, c, c, c, 1); 
 		y_add += string_height_ext(text_array[i], text_height, text_max_width) + y_buffer / 2;

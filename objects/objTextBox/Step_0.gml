@@ -1,8 +1,5 @@
 if (keyboard_check_pressed(ord("Z"))) {
-	
-	
-	
-	if (!choice_dialogue and counter < str_len) {
+	if (!choice_dialogue and text_slot < str_len) {
 		text_slot = str_len;
 		counter = str_len;
 	} else if(page < array_length_1d(text) - 1) {

@@ -10,6 +10,18 @@ gui_height = display_get_gui_height();
 box_x = (gui_width - box_width) * 0.5 - (2.5 * scale)
 box_y = (gui_height * 0.98) - box_height;
 
+var topshow = false;
+
+with (objScientist) {
+	if (y >= 160) {
+		topshow = true;
+	}
+}
+
+if (topshow) {
+	box_y = (gui_height * 0.02);
+}
+
 x_buffer = 10 * scale;
 y_buffer = 12 * scale;
 
@@ -31,3 +43,5 @@ text_height = 0.5 * string_height("M") * scale;
 
 text_x = box_x + 2 * x_buffer - (5 * scale);
 text_y = box_y + (text_height * 2 / 3);
+
+can_press_z = true;

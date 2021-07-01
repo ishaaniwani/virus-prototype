@@ -16,6 +16,19 @@ gui_height = display_get_gui_height();
 
 port_x = (gui_width - box_width - port_width) * 0.5
 port_y = (gui_height * 0.98) - port_height;
+
+var topshow = false;
+
+with (objScientist) {
+	if (y >= 160) {
+		topshow = true;
+	}
+}
+
+if (topshow) {
+	port_y = (gui_height * 0.02);
+}
+
 box_x = port_x + port_width;
 box_y = port_y;
 namebox_x = port_x;

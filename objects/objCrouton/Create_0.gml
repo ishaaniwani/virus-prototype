@@ -1,4 +1,4 @@
-portrait_index = 0;
+portrait_index = 1;
 type = "NPC";
 voice = snd_voice2;
 speaker_name = "Crouton";

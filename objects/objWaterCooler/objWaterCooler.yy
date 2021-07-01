@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sprWall",
-    "path": "sprites/sprWall/sprWall.yy",
+    "name": "sprWaterCooler",
+    "path": "sprites/sprWaterCooler/sprWaterCooler.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "objParentInteractableObject",
+    "path": "objects/objParentInteractableObject/objParentInteractableObject.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,17 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Misc",
-    "path": "folders/Objects/Misc.yy",
+    "name": "Interactables",
+    "path": "folders/Objects/Interactables.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objWall",
+  "name": "objWaterCooler",
   "tags": [],
   "resourceType": "GMObject",
 }

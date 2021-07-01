@@ -8,4 +8,10 @@ function RemoveVelvetRope(){
 		alarm[0] = 3 * 60;
 	}
 	
+	with (objCrouton) {
+		text = ["I've unlocked it. Good luck!"];
+		speakers = [id];
+		next_line = [-1];
+		scripts = [-1];
+	}
 }

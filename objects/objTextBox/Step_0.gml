@@ -22,6 +22,9 @@ if (keyboard_check_pressed(ord("Z"))) {
 
 		event_perform(ev_other, ev_user1);
 	} else {
+		with (objScientist) {
+			in_conversation = true;
+		}
 		instance_destroy();
 	}
 } 

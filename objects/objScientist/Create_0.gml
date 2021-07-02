@@ -20,3 +20,4 @@ active_textbox = noone;
 in_conversation = false;
 inventory_opened = false
 player_direction = 0;
+exit_marker = false;

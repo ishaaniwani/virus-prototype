@@ -14,4 +14,19 @@ function RemoveVelvetRope(){
 		next_line = [-1];
 		scripts = [-1];
 	}
+	
+	// HAS TO BE NAMED DIFFERENTLY FROM DEFAULT VALUES
+	var new_text = ["Magically, - and not due to the fact that its hard to sprite, the velvet rope falls down."];
+	var new_speakers = [id];
+	var new_next_line = [-1];
+	var new_scripts = [-1];
+	
+	
+	with (objScientist) {
+		exit_marker = true;	
+	}
+	
+	
+	CreateDescriptionTextbox(new_text, new_speakers, new_next_line, new_scripts);
+	
 }

@@ -28,7 +28,7 @@ if(keyInteract and !inventory_opened) {
 		} else if (inst_obj != noone) {
 			with (inst_obj) {
 				if (array_length_1d(text) == 0) exit; // could be problematic in the future.
-				var tbox = CreateDescriptionTextbox(text, speakers);	
+				var tbox = CreateDescriptionTextbox(text, speakers, next_line, scripts);	
 			}
 			active_textbox = tbox;
 			in_conversation = true;
@@ -40,7 +40,7 @@ if(keyInteract and !inventory_opened) {
 	}
 }
 
-if (in_conversation or inventory_opened) {
+if (in_conversation or inventory_opened or exit_marker) {
 	sprite_index = spriteIdle;
 	image_index = player_direction;
 	exit;

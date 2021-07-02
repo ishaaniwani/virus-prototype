@@ -38,10 +38,11 @@ voice = snd_voice2;
 text_col = c_white;
 font = fntBigText;
 
+choice = 0;
+choice_col = c_lime;
+
 draw_set_font(font);
 text_height = 0.5 * string_height("M") * scale;
 
 text_x = box_x + 2 * x_buffer - (5 * scale);
 text_y = box_y + (text_height * 2 / 3);
-
-can_press_z = true;

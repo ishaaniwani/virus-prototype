@@ -1,5 +1,5 @@
 if (instance_exists(objScientist)) {
 	with (objScientist) {
-		in_conversation = false;	
+		in_conversation = false;
 	}
 }

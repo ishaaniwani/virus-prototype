@@ -1,3 +1,9 @@
+// Description boxes is a slightly meagered down version of Textbox, it just doesn't have 
+// portraits and names
+// Why not have the same object? Well at first it was because I was lazy and didn't want to deal with all the logic
+// but then I realized that there is a distinction, and that I do want to give priority to NPCs over interactable objects
+// and while I could still do that with one class, it made more sense to have two different types to make priority simpler
+
 box = sprTextBox;
 scale = 3;
 

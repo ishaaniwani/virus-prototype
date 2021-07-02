@@ -1,9 +1,12 @@
+
+// sprites to use, these are converted into variables so that it is easier to change if needed, just come back here.
 box = sprTextBox;
 frame = sprPortraitFrame;
 portrait = sprPortraits;
 namebox = sprNameBox;
 scale = 3;
 
+// sprite dimensions, used for placing in the GUI
 box_width = sprite_get_width(box) * scale;
 box_height = sprite_get_height(box) * scale;
 port_width = sprite_get_width(portrait) * scale;
@@ -17,6 +20,9 @@ gui_height = display_get_gui_height();
 port_x = (gui_width - box_width - port_width) * 0.5
 port_y = (gui_height * 0.98) - port_height;
 
+// We want the dialogue box to show on the top if the player is interacting with something in the lower half of the screen
+// That way we see what we're interacting with and the dialogue box doesn't interfere with out view.
+
 var topshow = false;
 
 with (objScientist) {
@@ -29,6 +35,7 @@ if (topshow) {
 	port_y = (gui_height * 0.02);
 }
 
+// Determine where to place what
 box_x = port_x + port_width;
 box_y = port_y;
 namebox_x = port_x;

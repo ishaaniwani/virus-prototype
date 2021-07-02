@@ -15,6 +15,11 @@ if (keyboard_check_pressed(ord("Z"))) {
 		if (line == 0) {
 			page++;	
 		} else if (line == -1) {
+			with (objScientist) {
+				//in_conversation = true;
+				// Added this to solve bug where you had to press key twice to interact again
+				active_textbox = noone;	
+			}
 			instance_destroy(); exit;
 		} else {
 			page = line;
@@ -22,6 +27,10 @@ if (keyboard_check_pressed(ord("Z"))) {
 
 		event_perform(ev_other, ev_user1);
 	} else {
+		with (objScientist) {
+			// Added this to fix bug where you had to press key twice to interact again
+			active_textbox = noone;	
+		}
 		instance_destroy();
 	}
 } 

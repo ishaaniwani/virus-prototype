@@ -1,8 +1,6 @@
-type = "Interactable";
-voice = snd_voice2;
-text = ["Hey there! I'm Crouton!",
-		"Hey, aren't they putting you in the actual game?",
-		"Yup! I'm excited."];
-speakers = [id, objScientist, id];
-next_line = [0];
-scripts = -1;
+type = "Interactable"; // Easy way of knowing what type of object something is
+voice = snd_voice2; // Default voice to use
+text = ["This interactable object has nothing to say to you."]; // Default text
+speakers = [id]; // Default speakers
+next_line = [0]; // Default line
+scripts = -1; // Default scripts

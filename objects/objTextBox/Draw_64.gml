@@ -36,6 +36,9 @@ draw_set_halign(fa_center); draw_set_valign(fa_middle);
 draw_text_color(name_text_x, name_text_y, speaker_name, c, c, c, c, 1 );
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 
+
+// If it not a choice dialogue, draw text as usual, the below code has a typewriter effect
+// for gamefeel and juice.
 if(!choice_dialogue) {
 	// Draw Text
 	if (!pause and text_slot < str_len) {
@@ -60,6 +63,7 @@ if(!choice_dialogue) {
 	draw_text_color(text_x, text_y, substr,
 					c, c, c, c, 1); 
 } else {
+	// Otherwise, list out the player's choices.
 	c = text_col;
 	var i = 0, y_add = 0; repeat(text_array_len) {
 		if(choice == i){ 

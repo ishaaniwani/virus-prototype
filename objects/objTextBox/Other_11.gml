@@ -1,3 +1,5 @@
+// Grabs the info of what is talking and what they are saying.
+// Remember that a script passes in the information to the textbox and gives it all this information
 
 speaker_name = names[page];
 voice = voices[page];

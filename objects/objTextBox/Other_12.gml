@@ -1,5 +1,6 @@
  //[scripts, arg0, arg1...]
  
+ // Runs any scripts from dialogue
 if (is_array(scripts)) {
 	
 	var pagescript = scripts[page];

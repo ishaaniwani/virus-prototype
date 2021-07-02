@@ -2,6 +2,15 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function RemoveVelvetRope(){
 	
+	var elements = layer_get_all_elements("Text");
+	for (var i = 0; i < array_length_1d(elements); i++) {
+	     if (layer_get_element_type(elements[i]) == objTextBox) {
+				var layerelement = elements[i];
+				var inst = layer_instance_get_instance(layerelement);
+				instance_destroy(inst)
+		}
+	}
+		
 	with (objVelvetRope) {
 		if (!ropeup) exit;
 		image_speed = 1;
@@ -24,9 +33,7 @@ function RemoveVelvetRope(){
 	
 	with (objScientist) {
 		exit_marker = true;	
+		in_conversation = true;
+		active_textbox = CreateDescriptionTextbox(new_text, new_speakers, new_next_line, new_scripts);
 	}
-	
-	
-	CreateDescriptionTextbox(new_text, new_speakers, new_next_line, new_scripts);
-	
 }

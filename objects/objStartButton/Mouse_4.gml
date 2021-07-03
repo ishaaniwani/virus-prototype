@@ -2,5 +2,5 @@
 
 if (place_meeting(x, y, objMouseFollower)) {
 	audio_play_sound(souStartClick, 80, false)
-	room_goto(room0);	
+	room_goto(room01Hospital);	
 }

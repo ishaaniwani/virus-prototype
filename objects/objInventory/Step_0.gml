@@ -1,9 +1,16 @@
 keyMenu = keyboard_check_pressed(ord("C"));
 keyItems = keyboard_check_pressed(ord("X"));
 
-if (keyMenu and show_items == false) {
+var convo = false;
+with (objScientist) {
+	convo = in_conversation;	
+}
+
+if (keyMenu and show_items == false and !convo) {
 	show_inventory = !show_inventory;
-	global.move_control = !global.move_control;
+	with (objScientist) {
+		inventory_opened = true;	
+	}
 	if (show_inventory) {
 		audio_play_sound(vgmenuselect, 1, false);
 	}
@@ -20,7 +27,9 @@ if (show_inventory and keyItems) {
 
 // Ensure that player can move after inventory has been turned off
 if (show_inventory == false and show_items == false) {
-	global.move_control = true;	
+	with (objScientist) {
+		inventory_opened = false;
+	}
 }
 
 if (show_inventory = false) exit;

@@ -1,4 +1,4 @@
- if (!show_inventory) exit;
+if (!show_inventory) exit;
 
 var info_grid = ds_player_info;
 

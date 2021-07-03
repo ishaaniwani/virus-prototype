@@ -21,3 +21,9 @@ in_conversation = false;
 inventory_opened = false
 player_direction = 0;
 exit_marker = false;
+
+if (global.targetX != -1) {
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDirection;
+}

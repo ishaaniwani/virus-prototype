@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprVelvetRope",
-    "path": "sprites/sprVelvetRope/sprVelvetRope.yy",
+    "name": "sprStatue",
+    "path": "sprites/sprStatue/sprStatue.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects/Interactables.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objVelvetRope",
+  "name": "objStatue",
   "tags": [],
   "resourceType": "GMObject",
 }

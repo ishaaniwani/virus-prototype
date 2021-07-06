@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function RemoveVelvetRope(){
 	
+	// Destroy all textboxes before this new textbox pops up.
 	var elements = layer_get_all_elements("Text");
 	for (var i = 0; i < array_length_1d(elements); i++) {
 	     if (layer_get_element_type(elements[i]) == objTextBox) {
@@ -10,19 +11,28 @@ function RemoveVelvetRope(){
 				instance_destroy(inst)
 		}
 	}
-		
+	
+	// Change rope
 	with (objVelvetRope) {
-		if (!ropeup) exit;
-		image_speed = 1;
-		alarm[0] = 3 * 60;
+		image_index = 1; 
+		ropeup = false;
+		text = [];
+		speakers = [];
+		with (hitbox) {
+			instance_destroy();	
+		}
 	}
 	
+	
+	// Change Croutons text
 	with (objCrouton) {
 		text = ["I've unlocked it. Good luck!"];
 		speakers = [id];
 		next_line = [-1];
 		scripts = [-1];
 	}
+	
+	// Event Dialogue
 	
 	// HAS TO BE NAMED DIFFERENTLY FROM DEFAULT VALUES
 	var new_text = ["Magically, - and not due to the fact that its hard to sprite, the velvet rope falls down."];

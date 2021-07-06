@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sprVelvetRope",
-    "path": "sprites/sprVelvetRope/sprVelvetRope.yy",
+    "name": "sprTable",
+    "path": "sprites/sprTable/sprTable.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "objParentInteractableObject",
-    "path": "objects/objParentInteractableObject/objParentInteractableObject.yy",
+    "name": "objParentDepthObject",
+    "path": "objects/objParentDepthObject/objParentDepthObject.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,9 +23,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -33,7 +31,7 @@
     "path": "folders/Objects/Interactables.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objVelvetRope",
+  "name": "objTable",
   "tags": [],
   "resourceType": "GMObject",
 }

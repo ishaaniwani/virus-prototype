@@ -1,4 +1,4 @@
-// @desc Cause a room transition
+ // @desc Cause a room transition
 
 if (instance_exists(objScientist) and 
 	position_meeting(objScientist.x, objScientist.y, id)){
@@ -8,6 +8,9 @@ if (instance_exists(objScientist) and
 	global.targetY = targetY;
 	global.targetDirection = objScientist.direction;
 	
-	room_goto(targetRoom);
+	with (objScientist) {
+		state = PlayerStateTransition;	
+	}
+	RoomTransition(TRANS_TYPE.FADE, targetRoom);
 	instance_destroy();
 }

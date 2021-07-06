@@ -1,5 +1,7 @@
 event_inherited();
 
+state = PlayerStateFree;
+
 image_speed = 0;
 hSpeed = 0; // horizontal speed
 vSpeed = 0; // vertical speed

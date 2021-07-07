@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"e9b004fb-19af-4bcb-bd63-9287f58995ac","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"e9b004fb-19af-4bcb-bd63-9287f58995ac","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"LayerId":{"name":"ac926469-5692-4e4d-9e2a-4ddb874bd1b2","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e9b004fb-19af-4bcb-bd63-9287f58995ac","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"LayerId":{"name":"33d02563-4363-4332-b313-8587c0f47ec9","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprHospitalRoom05","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"resourceVersion":"1.0","name":"e9b004fb-19af-4bcb-bd63-9287f58995ac","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -65,6 +66,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":25.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"33d02563-4363-4332-b313-8587c0f47ec9","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ac926469-5692-4e4d-9e2a-4ddb874bd1b2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,

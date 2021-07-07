@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 101,
-  "bbox_right": 799,
-  "bbox_top": 45,
-  "bbox_bottom": 855,
+  "bbox_left": 0,
+  "bbox_right": 14,
+  "bbox_top": 0,
+  "bbox_bottom": 34,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 900,
-  "height": 900,
+  "width": 15,
+  "height": 35,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5b658265-3721-4653-8481-74b2b603f9d1","path":"sprites/sprTestApple/sprTestApple.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5b658265-3721-4653-8481-74b2b603f9d1","path":"sprites/sprTestApple/sprTestApple.yy",},"LayerId":{"name":"df311cf2-6092-45d0-ae2f-558f2bcc8536","path":"sprites/sprTestApple/sprTestApple.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprTestApple","path":"sprites/sprTestApple/sprTestApple.yy",},"resourceVersion":"1.0","name":"5b658265-3721-4653-8481-74b2b603f9d1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0d4a1361-f823-4b99-9712-16fa3fd0050a","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0d4a1361-f823-4b99-9712-16fa3fd0050a","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},"LayerId":{"name":"ad6d05e7-bed8-4184-bab4-8a9844bbcd8a","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprBloodStuff","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},"resourceVersion":"1.0","name":"0d4a1361-f823-4b99-9712-16fa3fd0050a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprTestApple","path":"sprites/sprTestApple/sprTestApple.yy",},
+    "spriteId": {"name":"sprBloodStuff","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a5eb09fb-988f-4bc4-823c-aefb274a842e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b658265-3721-4653-8481-74b2b603f9d1","path":"sprites/sprTestApple/sprTestApple.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c01ca02d-668b-4890-8ffd-acc045436ebe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d4a1361-f823-4b99-9712-16fa3fd0050a","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprTestApple","path":"sprites/sprTestApple/sprTestApple.yy",},
+    "parent": {"name":"sprBloodStuff","path":"sprites/sprBloodStuff/sprBloodStuff.yy",},
     "resourceVersion": "1.3",
-    "name": "sprTestApple",
+    "name": "sprBloodStuff",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"df311cf2-6092-45d0-ae2f-558f2bcc8536","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ad6d05e7-bed8-4184-bab4-8a9844bbcd8a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Interactive Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprTestApple",
+  "name": "sprBloodStuff",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -14,8 +14,8 @@
   ],
   "layers": [
     {"assets":[
-        {"ignore":false,"spriteId":{"name":"sprSunRay","path":"sprites/sprSunRay/sprSunRay.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":0.08136674,"scaleY":0.154975921,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,"x":163.000015,"y":176.0,"resourceVersion":"1.0","name":"graphic_127F95C1","tags":[],"resourceType":"GMRSpriteGraphic",},
-      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Assets_2","tags":[],"resourceType":"GMRAssetLayer",},
+        {"spriteId":{"name":"sprSunRay","path":"sprites/sprSunRay/sprSunRay.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":0.08136674,"scaleY":0.154975921,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":163.000015,"y":176.0,"resourceVersion":"1.0","name":"graphic_127F95C1","tags":[],"resourceType":"GMRSpriteGraphic",},
+      ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Assets_2","tags":[],"resourceType":"GMRAssetLayer",},
     {"instances":[
         {"properties":[
             {"propertyId":{"name":"targetX","path":"objects/objRoomExit/objRoomExit.yy",},"objectId":{"name":"objRoomExit","path":"objects/objRoomExit/objRoomExit.yy",},"value":"160","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -29,9 +29,11 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"objTestBed","path":"objects/objTestBed/objTestBed.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":261.0,"y":152.0,"resourceVersion":"1.0","name":"inst_37261BC6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"objSansSkeleton","path":"objects/objSansSkeleton/objSansSkeleton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":84.0,"y":147.0,"resourceVersion":"1.0","name":"inst_5FA39263","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"objBloodStuff","path":"objects/objBloodStuff/objBloodStuff.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":119.0,"y":121.0,"resourceVersion":"1.0","name":"inst_3B7E6431","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"objMainDoctor","path":"objects/objMainDoctor/objMainDoctor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":220.0,"y":156.0,"resourceVersion":"1.0","name":"inst_1BECB7FD","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"objNurse","path":"objects/objNurse/objNurse.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":122.0,"y":186.0,"resourceVersion":"1.0","name":"inst_1EF222F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
-        {"ignore":false,"spriteId":{"name":"sprOpenWindow","path":"sprites/sprOpenWindow/sprOpenWindow.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,"x":143.0,"y":79.0,"resourceVersion":"1.0","name":"graphic_5E8C029F","tags":[],"resourceType":"GMRSpriteGraphic",},
+        {"spriteId":{"name":"sprOpenWindow","path":"sprites/sprOpenWindow/sprOpenWindow.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":143.0,"y":79.0,"resourceVersion":"1.0","name":"graphic_5E8C029F","tags":[],"resourceType":"GMRSpriteGraphic",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Assets_1","tags":[],"resourceType":"GMRAssetLayer",},
     {"spriteId":{"name":"sprHospitalRoom05","path":"sprites/sprHospitalRoom05/sprHospitalRoom05.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -45,6 +47,8 @@
     {"name":"inst_37261BC6","path":"rooms/room05Hospital/room05Hospital.yy",},
     {"name":"inst_5FA39263","path":"rooms/room05Hospital/room05Hospital.yy",},
     {"name":"inst_3B7E6431","path":"rooms/room05Hospital/room05Hospital.yy",},
+    {"name":"inst_1BECB7FD","path":"rooms/room05Hospital/room05Hospital.yy",},
+    {"name":"inst_1EF222F","path":"rooms/room05Hospital/room05Hospital.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -46,6 +46,7 @@
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Walls","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"objPlantwBook","path":"objects/objPlantwBook/objPlantwBook.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":67.0,"y":199.0,"resourceVersion":"1.0","name":"inst_2106CCF4","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"objDoctor","path":"objects/objDoctor/objDoctor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":245.0,"y":123.0,"resourceVersion":"1.0","name":"inst_1A8FFAE5","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"sprHospitalRoom03","path":"sprites/sprHospitalRoom03/sprHospitalRoom03.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -75,6 +76,7 @@
     {"name":"inst_1ADA6AE6","path":"rooms/room03Hospital/room03Hospital.yy",},
     {"name":"inst_7B4B7185","path":"rooms/room03Hospital/room03Hospital.yy",},
     {"name":"inst_2106CCF4","path":"rooms/room03Hospital/room03Hospital.yy",},
+    {"name":"inst_1A8FFAE5","path":"rooms/room03Hospital/room03Hospital.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

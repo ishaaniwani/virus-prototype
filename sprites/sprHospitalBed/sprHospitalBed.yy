@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 40,
   "bbox_top": 0,
-  "bbox_bottom": 0,
+  "bbox_bottom": 59,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 41,
+  "height": 60,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e61c2d7b-ecc4-46fe-b286-eb8c307d0fa3","path":"sprites/Sprite46/Sprite46.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e61c2d7b-ecc4-46fe-b286-eb8c307d0fa3","path":"sprites/Sprite46/Sprite46.yy",},"LayerId":{"name":"0d2dc46e-0791-4c94-887c-1f376cdc5d70","path":"sprites/Sprite46/Sprite46.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite46","path":"sprites/Sprite46/Sprite46.yy",},"resourceVersion":"1.0","name":"e61c2d7b-ecc4-46fe-b286-eb8c307d0fa3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b2c596f3-5ea5-4bbe-a6ab-d8b02799ef8e","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b2c596f3-5ea5-4bbe-a6ab-d8b02799ef8e","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},"LayerId":{"name":"23d1f6a1-a79d-47e3-9e90-4c96cdd7eb06","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprHospitalBed","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},"resourceVersion":"1.0","name":"b2c596f3-5ea5-4bbe-a6ab-d8b02799ef8e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite46","path":"sprites/Sprite46/Sprite46.yy",},
+    "spriteId": {"name":"sprHospitalBed","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"66c04d9f-77ce-4eb1-989b-d44d00ae771c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e61c2d7b-ecc4-46fe-b286-eb8c307d0fa3","path":"sprites/Sprite46/Sprite46.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"948f371b-a406-44fd-af04-066d4255cda5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b2c596f3-5ea5-4bbe-a6ab-d8b02799ef8e","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite46","path":"sprites/Sprite46/Sprite46.yy",},
+    "parent": {"name":"sprHospitalBed","path":"sprites/sprHospitalBed/sprHospitalBed.yy",},
     "resourceVersion": "1.3",
-    "name": "Sprite46",
+    "name": "sprHospitalBed",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0d2dc46e-0791-4c94-887c-1f376cdc5d70","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"23d1f6a1-a79d-47e3-9e90-4c96cdd7eb06","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Interactive Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sprite46",
+  "name": "sprHospitalBed",
   "tags": [],
   "resourceType": "GMSprite",
 }

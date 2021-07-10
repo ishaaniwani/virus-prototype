@@ -16,6 +16,7 @@ if(!choice_dialogue) {
 			text_slot++;
 		}
 		switch(string_char_at(text_wrapped, text_slot)) {
+			case " ": pause = true; alarm[1] = 1; break;
 			case ",": pause = true; alarm[1] = 10; break;
 			case ".":
 			case "?":

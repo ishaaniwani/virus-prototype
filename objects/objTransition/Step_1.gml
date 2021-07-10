@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-with (objScientist) {
+with (objCrouton) {
 	state = PlayerStateTransition;
 }
 
@@ -18,7 +18,7 @@ if (leading == OUT) {
 	percent = max(0, percent - TRANSITION_SPEED);
 	if (percent <= 0) // If Screen fully revealed
 	{
-		with (objScientist) {
+		with (objCrouton) {
 			state = PlayerStateFree;	
 		}
 		instance_destroy();	

@@ -5,7 +5,7 @@
 // player object while player is walking behind it
 // Makes the chest pop out, and is more realistic.
 
-if (place_meeting(x, y, objScientist) and chestTriggered == false) {
+if (place_meeting(x, y, objCrouton) and chestTriggered == false) {
 	if (keyboard_check_pressed(ord("Z"))) {
 		image_index = 1;
 		chestTriggered = true;

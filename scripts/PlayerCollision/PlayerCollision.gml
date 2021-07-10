@@ -5,13 +5,19 @@ function PlayerCollision(){
 	
 	// Horizontal Collision Check with wall
 	if ((place_meeting(x + speedWalk, y, objWall) and hSpeed > 0) or (place_meeting(x - speedWalk, y, objWall)) and hSpeed < 0) {
+		while(!place_meeting(x + sign(hSpeed), y, objWall)) {
+			x += sign(hSpeed);
+		}
 		hSpeed = 0;
 		_collision = true;
 	}
 	
 	// Vertical collision check with wall
 	if ((place_meeting(x, y + speedWalk, objWall) and vSpeed > 0) or (place_meeting(x, y - speedWalk, objWall) and vSpeed < 0)) {
-		vSpeed = 0;
+		while (!place_meeting(x, y + sign(vSpeed), objWall)) {
+			y += sign(vSpeed);
+		}
+		vSpeed = 0; 
 		_collision = true;
 	}
 	

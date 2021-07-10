@@ -18,7 +18,7 @@ box_y = (gui_height * 0.98) - box_height;
 
 var topshow = false;
 
-with (objScientist) {
+with (objCrouton) {
 	if (y >= 160) {
 		topshow = true;
 	}

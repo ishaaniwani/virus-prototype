@@ -16,7 +16,7 @@ if (keyboard_check_pressed(ord("Z"))) {
 		if (line == 0) {
 			page++;	
 		} else if (line == -1) {
-			with (objScientist) {
+			with (objCrouton) {
 				//in_conversation = true;
 				// Added this to solve bug where you had to press key twice to interact again
 				active_textbox = noone;	
@@ -29,7 +29,7 @@ if (keyboard_check_pressed(ord("Z"))) {
 		event_perform(ev_other, ev_user1);
 	} else {
 		// if there's nothing left to show, wrap it up and destroy everything
-		with (objScientist) {
+		with (objCrouton) {
 			//in_conversation = true;
 			// Added this to solve bug where you had to press key twice to interact again
 			active_textbox = noone;	

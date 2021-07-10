@@ -2,13 +2,13 @@ keyMenu = keyboard_check_pressed(ord("C"));
 keyItems = keyboard_check_pressed(ord("X"));
 
 var convo = false;
-with (objScientist) {
+with (objCrouton) {
 	convo = in_conversation;	
 }
 
 if (keyMenu and show_items == false and !convo) {
 	show_inventory = !show_inventory;
-	with (objScientist) {
+	with (objCrouton) {
 		inventory_opened = true;	
 	}
 	if (show_inventory) {
@@ -27,7 +27,7 @@ if (show_inventory and keyItems) {
 
 // Ensure that player can move after inventory has been turned off
 if (show_inventory == false and show_items == false) {
-	with (objScientist) {
+	with (objCrouton) {
 		inventory_opened = false;
 	}
 }
@@ -81,7 +81,7 @@ if(pickup_slot != -1) {
 			}
 		
 			// Create the item.
-			var inst = instance_create_layer(objScientist.x, objScientist.y, "Instances", objItem);
+			var inst = instance_create_layer(objCrouton.x, objCrouton.y, "Instances", objItem);
 			with(inst) {
 				item_num = pitem;
 				x_frame = item_num mod (spr_width / cell_size);
@@ -127,7 +127,7 @@ if(pickup_slot != -1) {
 		}
 		
 		// Create the item.
-		var inst = instance_create_layer(objScientist.x, objScientist.y, "Instances", objItem);
+		var inst = instance_create_layer(objCrouton.x, objCrouton.y, "Instances", objItem);
 		with(inst) {
 			item_num = ss_item;
 			x_frame = item_num mod (spr_width / cell_size);

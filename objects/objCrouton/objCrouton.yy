@@ -5,11 +5,14 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprCrouton",
+    "path": "sprites/sprCrouton/sprCrouton.yy",
+  },
   "persistent": false,
   "parentObjectId": {
-    "name": "objParentNPCObject",
-    "path": "objects/objParentNPCObject/objParentNPCObject.yy",
+    "name": "objParentDepthObject",
+    "path": "objects/objParentDepthObject/objParentDepthObject.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,6 +28,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

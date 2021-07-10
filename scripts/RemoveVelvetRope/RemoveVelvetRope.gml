@@ -23,27 +23,11 @@ function RemoveVelvetRope(){
 		}
 	}
 	
-	
 	// Change Croutons text
-	with (objCrouton) {
+	with (objCroutonTextBox) {
 		text = ["I've unlocked it. Good luck!"];
 		speakers = [id];
 		next_line = [-1];
 		scripts = [-1];
-	}
-	
-	// Event Dialogue
-	
-	// HAS TO BE NAMED DIFFERENTLY FROM DEFAULT VALUES
-	var new_text = ["Magically, - and not due to the fact that its hard to sprite, the velvet rope falls down."];
-	var new_speakers = [id];
-	var new_next_line = [-1];
-	var new_scripts = [-1];
-	
-	
-	with (objScientist) {
-		exit_marker = true;	
-		in_conversation = true;
-		active_textbox = CreateDescriptionTextbox(new_text, new_speakers, new_next_line, new_scripts);
 	}
 }

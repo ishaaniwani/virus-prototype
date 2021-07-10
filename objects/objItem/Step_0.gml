@@ -7,8 +7,8 @@ if (drop_move) {
 } else {
 	if (!keyboard_check(ord("Z"))) exit;
 	
-	var px = objScientist.x;
-	var py = objScientist.y;
+	var px = objCrouton.x;
+	var py = objCrouton.y;
 	var r = 16;
 	
 	if (point_in_rectangle(px, py, x - r, y - r, x + r, y + r)) {

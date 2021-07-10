@@ -1,5 +1,5 @@
-if (instance_exists(objScientist)) {
-	with (objScientist) {
+if (instance_exists(objCrouton)) {
+	with (objCrouton) {
 		in_conversation = false;
 	}
 }

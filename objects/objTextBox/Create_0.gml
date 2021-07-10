@@ -25,7 +25,7 @@ port_y = (gui_height * 0.98) - port_height;
 
 var topshow = false;
 
-with (objScientist) {
+with (objCrouton) {
 	if (y >= 160) {
 		topshow = true;
 	}

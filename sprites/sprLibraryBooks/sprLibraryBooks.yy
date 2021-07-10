@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 40,
-  "height": 52,
+  "height": 57,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 20,
-    "yorigin": 52,
+    "yorigin": 57,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprLibraryBooks","path":"sprites/sprLibraryBooks/sprLibraryBooks.yy",},

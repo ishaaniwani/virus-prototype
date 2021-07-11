@@ -16,7 +16,7 @@ portrait_index = 0;
 voice = snd_voice1;
 speaker_name = "Scientist";
 
-radius = 22;
+radius = 10;
 active_textbox = noone;
 
 in_conversation = false;

@@ -14,18 +14,32 @@ if(keyInteract and (!inventory_opened or in_conversation or exit_marker)) {
 	// If you're not currently talking to someone, then try checking!
 	if (active_textbox == noone) {
 		
-		//Check for NPC
-		var inst_npc = collision_rectangle(x - radius, y - radius, x + radius, y,
-							objParentNPCObject, false, false);
 		
-		//Check for interactable objects
-		var inst_obj = collision_rectangle(x - radius, y - radius, x + radius, y ,
-							objParentInteractableObject, false, false);
-	
+		//var inst_npc = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPCObject, false, false);
+		//var inst_obj = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentInteractableObject, false, false);
+		
+		var inst_npc;
+		var inst_obj;
+		
+		
+		if (direction == 0) {
+			inst_npc = collision_rectangle(x, y - radius, x + radius, y + radius, objParentNPCObject, false, false);
+			inst_obj = collision_rectangle(x, y - radius, x + radius, y , objParentInteractableObject, false, false);	
+		} else if (direction == 90) {
+			inst_npc = collision_rectangle(x - radius, y , x + radius, y - radius, objParentNPCObject, false, false);
+			inst_obj = collision_rectangle(x - radius, y , x + radius, y - radius, objParentInteractableObject, false, false);	
+		} else if (direction == 180) {
+			inst_npc = collision_rectangle(x, y , x - radius, y - radius, objParentNPCObject, false, false);
+			inst_obj = collision_rectangle(x, y , x - radius, y - radius, objParentInteractableObject, false, false);	
+		} else if (direction == 270) {
+			inst_npc = collision_rectangle(x - radius, y - radius , x, y + radius, objParentNPCObject, false, false);
+			inst_obj = collision_rectangle(x - radius, y - radius , x, y + radius, objParentInteractableObject, false, false);
+		}
+		
 		// NPC's get priority, but if already in a conversation (it may have changed during the step
 		// then don't go ahead and interact, wait until current conversation is over.
 		if (inst_npc != noone and !in_conversation) {
-			
+			show_debug_message("triggered npc?");
 			// Get the information of the NPC you're colliding with, and give that to 
 			// a script to create the textbox
 			with (inst_npc) {
@@ -37,7 +51,7 @@ if(keyInteract and (!inventory_opened or in_conversation or exit_marker)) {
 			active_textbox = tbox;
 			in_conversation = true;
 		} else if (inst_obj != noone and !in_conversation) {
-			
+			show_debug_message("triggered obj");
 			// Same thing but with description boxes
 			with (inst_obj) {
 				if (array_length_1d(text) == 0) exit; // could be problematic in the future.

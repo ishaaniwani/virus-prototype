@@ -1,8 +1,8 @@
-portrait_index = 1;
+portrait_index = 2;
 type = "NPC";
 voice = snd_voice2;
 visible = false;
-speaker_name = "Crouton";
+speaker_name = "Secretary";
 text = ["Ahh... Crouton. There you are! It's good to see you.",
 		"Thanks. Where's the patient?",
 		"Behind the velvet rope. I've just unlocked it. It's remote controlled."

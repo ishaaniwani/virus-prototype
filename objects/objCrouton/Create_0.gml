@@ -14,7 +14,7 @@ localFrame = 0;
 
 portrait_index = 0;
 voice = snd_voice1;
-speaker_name = "Scientist";
+speaker_name = "Crouton";
 
 radius = 10;
 active_textbox = noone;

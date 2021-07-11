@@ -22,18 +22,28 @@ if(keyInteract and (!inventory_opened or in_conversation or exit_marker)) {
 		var inst_obj;
 		
 		
-		if (direction == 0) {
+		if (direction == 0) { // left
 			inst_npc = collision_rectangle(x, y - radius, x + radius, y + radius, objParentNPCObject, false, false);
-			inst_obj = collision_rectangle(x, y - radius, x + radius, y , objParentInteractableObject, false, false);	
-		} else if (direction == 90) {
+			inst_obj = collision_rectangle(x, y - radius, x + radius, y + radius, objParentInteractableObject, false, false);
+			
+		} else if (direction == 90) { // up
 			inst_npc = collision_rectangle(x - radius, y , x + radius, y - radius, objParentNPCObject, false, false);
 			inst_obj = collision_rectangle(x - radius, y , x + radius, y - radius, objParentInteractableObject, false, false);	
-		} else if (direction == 180) {
+			
+			show_debug_message("Drawing");
+			draw_rectangle_color(x - radius, y , x + radius, y - radius, c_aqua, c_aqua, c_aqua, c_aqua, false);
+			
+		} else if (direction == 180) { // right
 			inst_npc = collision_rectangle(x, y , x - radius, y - radius, objParentNPCObject, false, false);
-			inst_obj = collision_rectangle(x, y , x - radius, y - radius, objParentInteractableObject, false, false);	
-		} else if (direction == 270) {
+			inst_obj = collision_rectangle(x, y , x - radius, y - radius, objParentInteractableObject, false, false);
+			
+			draw_rectangle(x, y , x - radius, y - radius, true);
+			
+		} else if (direction == 270) { // down
 			inst_npc = collision_rectangle(x - radius, y - radius , x, y + radius, objParentNPCObject, false, false);
 			inst_obj = collision_rectangle(x - radius, y - radius , x, y + radius, objParentInteractableObject, false, false);
+			
+			draw_rectangle(x - radius, y - radius , x, y + radius, true);
 		}
 		
 		// NPC's get priority, but if already in a conversation (it may have changed during the step

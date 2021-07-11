@@ -45,16 +45,18 @@ if(!choice_dialogue) {
 		counter++;
 		if (counter mod 4 == 0) {
 			audio_play_sound(voice, 10, false);
-		}
+		} 
 		if (counter mod 2 == 0) {
 			text_slot++;
 		}
+		
+		
 		switch(string_char_at(text_wrapped, text_slot)) {
-			case ",": pause = true; alarm[1] = 10; break;
+			case ",": pause = true; draw_sprite_ext(portrait, portrait_index, port_x, port_y, scale, scale, 0, c_white, 1); alarm[1] = 10; break;
 			case ".":
 			case "?":
-			case "!": pause = true; alarm[1] = 15; break;
-		
+			case "!": pause = true; draw_sprite_ext(portrait, portrait_index, port_x, port_y, scale, scale, 0, c_white, 1); alarm[1] = 15; break;
+			default: draw_sprite_ext(portrait, portrait_index + 1, port_x, port_y, scale, scale, 0, c_white, 1); break;
 		}
 	}
 	var substr = string_copy(text_wrapped, 1, text_slot);

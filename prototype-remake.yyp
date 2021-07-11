@@ -74,7 +74,7 @@
     {"id":{"name":"objBench","path":"objects/objBench/objBench.yy",},"order":3,},
     {"id":{"name":"sprYellowPlant","path":"sprites/sprYellowPlant/sprYellowPlant.yy",},"order":13,},
     {"id":{"name":"sprInventoryUI","path":"sprites/sprInventoryUI/sprInventoryUI.yy",},"order":1,},
-    {"id":{"name":"objCroutonTextBox","path":"objects/objCroutonTextBox/objCroutonTextBox.yy",},"order":3,},
+    {"id":{"name":"objSecretaryTextBox","path":"objects/objSecretaryTextBox/objSecretaryTextBox.yy",},"order":3,},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},"order":0,},
     {"id":{"name":"sprPortraitFrame","path":"sprites/sprPortraitFrame/sprPortraitFrame.yy",},"order":8,},
     {"id":{"name":"snd_voice1","path":"sounds/snd_voice1/snd_voice1.yy",},"order":5,},

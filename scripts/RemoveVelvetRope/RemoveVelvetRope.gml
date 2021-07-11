@@ -23,8 +23,8 @@ function RemoveVelvetRope(){
 		}
 	}
 	
-	// Change Croutons text
-	with (objCroutonTextBox) {
+	// Change Secretary text
+	with (objSecretaryTextBox) {
 		text = ["I've unlocked it. Good luck!"];
 		speakers = [id];
 		next_line = [-1];

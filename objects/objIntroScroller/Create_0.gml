@@ -1,5 +1,5 @@
 /// @description Insert description here
-scrolling = false;
+scrolling = true;
 speedWalk = 1.25;
 hSpeed = 0;
 vSpeed = 0;

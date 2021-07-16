@@ -1,4 +1,4 @@
-portrait_index = 1;
+portrait_index = 4;
 type = "NPC";
 voice = snd_voice2;
 speaker_name = "Alexa";

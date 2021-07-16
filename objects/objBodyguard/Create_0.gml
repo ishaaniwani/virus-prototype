@@ -1,7 +1,7 @@
 // Parent class of all NPCs
 
 type = "NPC"; // Easy way to know what type of object it is
-portrait_index = 0; // what portrait to display during conversation
+portrait_index = 8; // what portrait to display during conversation
 voice = snd_voice2; // what voice to use
 speaker_name = "Anonymous"; // the name of the player
 text[0] = "This person has nothing to say"; // What the player will say

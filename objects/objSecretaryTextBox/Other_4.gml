@@ -1,11 +1,7 @@
-if (room == room01Hospital) {
-	show_debug_message("triggered room");
+// Only active this textbox in the room its supposed to be in.
+if (room == livingRoom) {
+	instance_activate_object(id);
+	//event_user(0);	
 } else {
-	show_debug_message("how did this happen?");
-	text = [];
-	speakers = []; // must be a speaker for each line
-	next_line = []; // you may need to add some zeros
-	// if you wanted to change what the person said after talking to them, then you can 
-	// do that with a script
-	scripts = [];
+	instance_deactivate_object(id);
 }

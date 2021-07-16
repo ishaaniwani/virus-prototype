@@ -23,11 +23,14 @@ function RemoveVelvetRope(){
 		}
 	}
 	
+	with (objGame) {
+		rope_unlocked = true;	
+	}
+	
 	// Change Secretary text
 	with (objSecretaryTextBox) {
-		text = ["I've unlocked it. Good luck!"];
-		speakers = [id];
-		next_line = [-1];
-		scripts = [-1];
+		event_user(0);
 	}
+	
+
 }

@@ -13,11 +13,6 @@ draw_sprite_ext(portrait, portrait_index, port_x, port_y,
 				scale, scale, 0,
 				c_white, 1);
 
-// Draw Portrait Frame
-draw_sprite_ext(frame, 1, port_x, port_y,
-				scale, scale, 0,
-				c_aqua, 1);
-
 // Draw Namebox
 // Tried drawing namebox, looked awkward
 // Going to draw name inside textbox instead
@@ -83,4 +78,8 @@ if(!choice_dialogue) {
 
 }
 
+// Draw Portrait Frame
+draw_sprite_ext(frame, 1, port_x, port_y,
+				scale, scale, 0,
+				c_aqua, 1);
     

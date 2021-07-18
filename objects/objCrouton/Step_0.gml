@@ -18,8 +18,8 @@ if(keyInteract and (!inventory_opened or in_conversation or exit_marker)) {
 		//var inst_npc = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentNPCObject, false, false);
 		//var inst_obj = collision_rectangle(x - radius, y - radius, x + radius, y + radius, objParentInteractableObject, false, false);
 		
-		var inst_npc;
-		var inst_obj;
+		var inst_npce = noone;
+		var inst_obj = noone;
 		
 		
 		if (direction == 0) { // left

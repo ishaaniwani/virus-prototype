@@ -44,6 +44,7 @@
             {"propertyId":{"name":"targetRoom","path":"objects/objRoomExit/objRoomExit.yy",},"objectId":{"name":"objRoomExit","path":"objects/objRoomExit/objRoomExit.yy",},"value":"room01Bus","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"objRoomExit","path":"objects/objRoomExit/objRoomExit.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.359375,"scaleY":0.3125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":359.0,"y":139.0,"resourceVersion":"1.0","name":"inst_4D741EEB","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"objWall","path":"objects/objWall/objWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.71875,"scaleY":0.46875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":370.5,"y":145.0,"resourceVersion":"1.0","name":"inst_9CCE839","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"objCutscene","path":"objects/objCutscene/objCutscene.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":76.0,"y":75.0,"resourceVersion":"1.0","name":"inst_5966AB67","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Walls","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"objCrouton","path":"objects/objCrouton/objCrouton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":257.0,"y":213.0,"resourceVersion":"1.0","name":"inst_564EA7B","tags":[],"resourceType":"GMRInstance",},
@@ -94,6 +95,7 @@
     {"name":"inst_312EF570","path":"rooms/room05Hospital/room05Hospital.yy",},
     {"name":"inst_4D741EEB","path":"rooms/room05Hospital/room05Hospital.yy",},
     {"name":"inst_9CCE839","path":"rooms/room05Hospital/room05Hospital.yy",},
+    {"name":"inst_5966AB67","path":"rooms/room05Hospital/room05Hospital.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

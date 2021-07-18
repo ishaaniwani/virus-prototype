@@ -10,3 +10,5 @@ global.targetY = -1
 global.targetDirection = 0;
 
 rope_unlocked = false;
+
+cutscene_music_playing = false;

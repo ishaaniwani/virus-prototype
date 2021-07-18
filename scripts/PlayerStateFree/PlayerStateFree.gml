@@ -9,8 +9,8 @@ function PlayerStateFree(){
 
 	// For diagonal movement, it feels better with this, more "gamefeel"
 	if (hSpeed != 0 and vSpeed != 0) {
-		hSpeed *= 1.15; 
-		vSpeed *= 1.15;
+		hSpeed *= 1.15; //1.15 is good but produces jitter
+		vSpeed *= 1.15; //1.15 is good but produced jitter
 	}
 
 	PlayerCollision();

@@ -12,7 +12,7 @@
     {"id":{"name":"sprPiano","path":"sprites/sprPiano/sprPiano.yy",},"order":5,},
     {"id":{"name":"objBusCouch","path":"objects/objBusCouch/objBusCouch.yy",},"order":24,},
     {"id":{"name":"objSunRay","path":"objects/objSunRay/objSunRay.yy",},"order":20,},
-    {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"order":7,},
+    {"id":{"name":"objPlayerTEST","path":"objects/objPlayerTEST/objPlayerTEST.yy",},"order":7,},
     {"id":{"name":"objChair","path":"objects/objChair/objChair.yy",},"order":10,},
     {"id":{"name":"objBusEntrance","path":"objects/objBusEntrance/objBusEntrance.yy",},"order":22,},
     {"id":{"name":"sprBusCouch","path":"sprites/sprBusCouch/sprBusCouch.yy",},"order":28,},

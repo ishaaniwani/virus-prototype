@@ -34,7 +34,7 @@
     "path": "folders/Objects/Characters.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objPlayer",
+  "name": "objPlayerTEST",
   "tags": [],
   "resourceType": "GMObject",
 }

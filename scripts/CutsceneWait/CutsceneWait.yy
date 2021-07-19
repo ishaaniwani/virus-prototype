@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "CutsceneScripts",
+    "path": "folders/Scripts/CutsceneScripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "CutsceneWait",

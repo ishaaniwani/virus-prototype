@@ -6,7 +6,7 @@
     "path": "folders/Scripts/CutsceneScripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "CutscenePlayMusic",
+  "name": "CutsceneMoveCharacter",
   "tags": [],
   "resourceType": "GMScript",
 }

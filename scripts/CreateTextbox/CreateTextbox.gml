@@ -3,6 +3,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function CreateTextbox(_text, _speakers, _next_line, _scripts){
+	if (instance_exists(objTextBox)) {
+		exit;	
+	}
+	
 	var tbox = instance_create_layer(0, 0, "Text", objTextBox);
 	
 	with(tbox) {

@@ -23,6 +23,7 @@
     {"id":{"name":"snd_voice2","path":"sounds/snd_voice2/snd_voice2.yy",},"order":4,},
     {"id":{"name":"CutsceneFreezePlayer","path":"scripts/CutsceneFreezePlayer/CutsceneFreezePlayer.yy",},"order":3,},
     {"id":{"name":"objTextBox","path":"objects/objTextBox/objTextBox.yy",},"order":4,},
+    {"id":{"name":"objCutsceneMarker","path":"objects/objCutsceneMarker/objCutsceneMarker.yy",},"order":3,},
     {"id":{"name":"sprPurposeTrigger","path":"sprites/sprPurposeTrigger/sprPurposeTrigger.yy",},"order":3,},
     {"id":{"name":"objGame","path":"objects/objGame/objGame.yy",},"order":6,},
     {"id":{"name":"sprVelvetRope","path":"sprites/sprVelvetRope/sprVelvetRope.yy",},"order":2,},

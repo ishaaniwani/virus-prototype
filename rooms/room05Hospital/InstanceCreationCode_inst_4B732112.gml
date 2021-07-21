@@ -9,9 +9,6 @@ if (cutscene_already_played) {
 	exit;
 }
 
-var nurse_id;
-var doctor_id;
-
 doctor_text = ["Crouton, I just noticed you. We need to start the procedure, now.", "This virus has the potential of taking over the world."]
 doctor_speakers = [objMainDoctor.id, objMainDoctor.id];
 doctor_next_line = [0, -1];
@@ -32,6 +29,14 @@ bodyguard_speakers = [objBodyguard.id];
 bodyguard_next_line = [-1];
 bodyguard_scripts = [-1];
 
+doctor_text2 = ["Alright Crouton whenever you're ready, just get in the bus.", 
+				["* I'll get in there.", "* Actually give me a moment"],
+				"Okay, best of luck!",
+				"Alright, just talk to me once you're ready."];
+doctor_speakers2 = [objMainDoctor.id, objCrouton.id, objMainDoctor.id, objMainDoctor.id];
+doctor_next_line2 = [0, [2, 3], -1, -1];
+doctor_scripts2 = [-1, [-1, -1], -1, -1];
+
 t_scene_info = [
 	[CutsceneFreezePlayer, true],
 	
@@ -41,28 +46,20 @@ t_scene_info = [
 	
 	[CutsceneWait, 3],
 	
-	[CutsceneMoveCameraToObject, objNurse, 0.05],
-	
 	[CreateTextbox, nurse_text, nurse_speakers, nurse_next_line, nurse_scripts],
-	
-	[CutsceneMoveCameraToObject, objMainDoctor, 0.05],
-	
 	[CreateTextbox, doctor_text, doctor_speakers, doctor_next_line, doctor_scripts],
-	
-	[CutsceneMoveCameraToObject, objCrouton, 0.05],
-	
 	[CreateTextbox, crouton_text, crouton_speakers, crouton_next_line, crouton_scripts],
-	
-	[CutsceneMoveCameraToObject, objBodyguard, 0.05],
-
 	[CreateTextbox, bodyguard_text, bodyguard_speakers, bodyguard_next_line, bodyguard_scripts],
-	
-	[CutsceneMoveCameraToObject, objCrouton, 0.05],
+	[CutsceneMoveCameraToObject, objBus, 0.05],
 
-	[CutsceneWait, 0.5],
+	[CutsceneWait, 3],
+	
+	[CreateTextbox, doctor_text2, doctor_speakers2, doctor_next_line2, doctor_scripts2],
+	[CutsceneMoveCameraToObject, objCrouton, 0.05],
+	
+	[CutsceneWait, 3],
 	
 	[CutsceneMoveCameraToObject, objCrouton, 1],
-
 	[CutsceneFreezePlayer, false],
 ];
 

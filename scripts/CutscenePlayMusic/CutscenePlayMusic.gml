@@ -9,7 +9,16 @@ function CutscenePlayMusic(music, priority, loop){
 	}
 	
 	if (!music_playing) {
-		audio_play_sound(music, priority, loop);
+		var inst;
+		if (!instance_exists(objMusicPlayer)) {
+			inst = instance_create_layer(0, 0, "Instances", objMusicPlayer);
+			with (inst) {
+				music_track = music;
+				m_priority = priority;
+				loopable = loop;
+				event_perform(ev_other, ev_user0);
+			}
+		}
 		with (objGame) {
 			cutscene_music_playing = true;	
 		}

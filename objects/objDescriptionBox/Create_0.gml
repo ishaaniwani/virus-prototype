@@ -4,6 +4,12 @@
 // but then I realized that there is a distinction, and that I do want to give priority to NPCs over interactable objects
 // and while I could still do that with one class, it made more sense to have two different types to make priority simpler
 
+var choice_color;
+
+with (objGame) {
+	choice_color = text_color;	
+}
+
 box = sprTextBox;
 scale = 3;
 
@@ -45,7 +51,7 @@ text_col = c_white;
 font = fntBigText;
 
 choice = 0;
-choice_col = c_lime;
+choice_col = choice_color;
 
 draw_set_font(font);
 text_height = 0.5 * string_height("M") * scale;

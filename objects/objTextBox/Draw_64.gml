@@ -1,12 +1,12 @@
 // Draw Box
 draw_sprite_ext(box, 0, box_x, box_y,
 				scale, scale, 0,
-				c_aqua, 1);
+				choice_col, 1);
 
 //Draw Portrait Back
 draw_sprite_ext(frame, 0, port_x, port_y,
 				scale, scale, 0,
-				c_aqua, 1);
+				choice_col, 1);
 
 // Draw Portrait
 draw_sprite_ext(portrait, portrait_index, port_x, port_y,
@@ -81,5 +81,5 @@ if(!choice_dialogue) {
 // Draw Portrait Frame
 draw_sprite_ext(frame, 1, port_x, port_y,
 				scale, scale, 0,
-				c_aqua, 1);
+				choice_col, 1);
     

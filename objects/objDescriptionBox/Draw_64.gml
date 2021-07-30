@@ -1,7 +1,7 @@
 // Draw Box
 draw_sprite_ext(box, 0, box_x, box_y,
 				scale, scale, 0,
-				c_aqua, 1);
+				choice_col, 1);
 
 //----TEXT
 draw_set_font(font);

@@ -14,3 +14,6 @@ rope_unlocked = false;
 cutscene_music_playing = false;
 
 hospitalCutscenePlayed = false;
+firstBusCutscenePlayed = false;
+
+text_color = c_white;

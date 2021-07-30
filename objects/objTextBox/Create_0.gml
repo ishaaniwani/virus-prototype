@@ -1,4 +1,11 @@
 
+var choice_color;
+
+with (objGame) {
+	choice_color = text_color;	
+}
+
+
 // sprites to use, these are converted into variables so that it is easier to change if needed, just come back here.
 box = sprTextBox;
 frame = sprPortraitFrame;
@@ -70,4 +77,4 @@ text_x = box_x + 2 * x_buffer - (5 * scale);
 text_y = name_text_y + (text_height * 2 / 3);
 
 choice = 0;
-choice_col = c_lime;
+choice_col = choice_color;
